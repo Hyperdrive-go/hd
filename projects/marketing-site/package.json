@@ -4,7 +4,8 @@
   "description": "HD Marketing Site",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "echo 'DONE'"
   },
   "keywords": [
     "NFT",
