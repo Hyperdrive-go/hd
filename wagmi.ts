@@ -1,19 +1,28 @@
+import { WagmiConfig } from 'wagmi'
+
+
+import { alchemyRpcUrls } from 'wagmi'
+
+// alchemyRpcUrls.mainnet
+// alchemyRpcUrls.arbitrum
+// alchemyRpcUrls.optimism
+
+import { chain } from 'wagmi'
+
+const defaultL2Chains = [chain.mainnet, chain.optimism, chain.arbitrumOne]
+
+
 import { getDefaultWallets } from '@rainbow-me/rainbowkit'
-import { chain, configureChains, createClient } from 'wagmi'
+import { configureChains, createClient } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 
 const { chains, provider } = configureChains(
- [chain.mainnet, chain.optimism, chain.arbitrum],
- [alchemyProvider({ apiKey: 'RbvJ2z-poT2yB-cpZ9xUMaauzUeTQVf5' })],
+ [chain.mainnet, chain.optimism, chain.arbitrumOne],
+ [alchemyProvider({ apiKey: 'z6Mck0HkCHdzCyl3zsCUy3jibAibNTZ7' })],
 )
 
-
-const { webSocketProvider } = configureChains(
-  [chain.mainnet, chain.optimism, chain.arbitrum],
-    [
-      alchemyProvider({
-        apiKey: 'RbvJ2z-poT2yB-cpZ9xUMaauzUeTQVf5',
+        apiKey: 'z6Mck0HkCHdzCyl3zsCUy3jibAibNTZ7',
         priority: 0,
       }),
       publicProvider({priority: 1}),
@@ -22,7 +31,7 @@ const { webSocketProvider } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: 'Hyperdrive',
-  chains,
+  chains, 'chain.optimism':'chain.arbitrum':'chain.mainnet'
 })
 
 export const client = createClient({
