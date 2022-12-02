@@ -21,7 +21,7 @@ const { webSocketProvider } = configureChains(
 )
 
 const { connectors } = getDefaultWallets({
-  appName: 'My wagmi + RainbowKit App',
+  appName: 'Hyperdrive',
   chains,
 })
 
