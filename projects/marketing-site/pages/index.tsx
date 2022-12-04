@@ -1,9 +1,9 @@
-import { DarkNavbar } from "@/components/index";
+import { DarkNavbar, MainHeroSection } from "@/components/index";
 
 const LandingPage = () => {
   return (
     <div>
-      <DarkNavbar />
+      <MainHeroSection />
       <main>Hello world</main>
     </div>
   );
