@@ -1,4 +1,4 @@
-import { MainHeroSection, Layout } from "@/components/index";
+import { MainHeroSection, Layout, FeaturesList } from "@/components/index";
 // import hyperdriveHero from "@/images/large-logo2.png";
 import hyperdriveHeroAlt from "@/images/logo-very-large.png";
 import Image from "next/image";
@@ -17,7 +17,7 @@ const LandingPage = () => {
             fill
           />
         </div>
-        {/* <FeaturesList /> */}
+        <FeaturesList />
       </main>
     </Layout>
   );
