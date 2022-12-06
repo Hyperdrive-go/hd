@@ -1,4 +1,5 @@
 import { BlueSplash, RedSplash, SimpleNavbar } from "@/components/index";
+import Link from "next/link";
 
 const MainHeroSection = () => {
   return (
@@ -13,10 +14,13 @@ const MainHeroSection = () => {
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-100/10 hover:ring-gray-100/20">
                   <span className="text-gray-200">
                     Announcing our first round of funding.{" "}
-                    <a href="#" className="font-semibold text-blue-500">
+                    <Link
+                      href="/funding"
+                      className="font-semibold text-blue-500"
+                    >
                       <span className="absolute inset-0" aria-hidden="true" />
                       Read more <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -30,15 +34,15 @@ const MainHeroSection = () => {
                   products and pioneers of the ecosystem.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
-                  <a
-                    href="#"
+                  <Link
+                    href="/funding"
                     className="inline-block rounded-lg bg-red-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-red-600 hover:bg-red-700 hover:ring-red-700"
                   >
                     Proposal
                     <span className="text-indigo-200" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
+                  </Link>
                   <a
                     href="#"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-100 ring-1 ring-gray-100/10 hover:ring-gray-100/20"
