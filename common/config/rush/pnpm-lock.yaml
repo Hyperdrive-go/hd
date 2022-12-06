@@ -7,6 +7,8 @@ importers:
 
   ../../projects/marketing-site:
     specifiers:
+      '@fortawesome/free-brands-svg-icons': ~6.2.1
+      '@fortawesome/react-fontawesome': ~0.2.0
       '@headlessui/react': ~1.7.4
       '@heroicons/react': ~2.0.13
       '@tailwindcss/aspect-ratio': ~0.4.2
@@ -28,6 +30,8 @@ importers:
       tailwindcss: ~3.2.4
       typescript: 4.9.3
     dependencies:
+      '@fortawesome/free-brands-svg-icons': 6.2.1
+      '@fortawesome/react-fontawesome': 0.2.0_react@18.2.0
       '@headlessui/react': 1.7.4_react-dom@18.2.0+react@18.2.0
       '@heroicons/react': 2.0.13_react@18.2.0
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
@@ -418,6 +422,30 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@fortawesome/fontawesome-common-types/6.2.1:
+    resolution: {integrity: sha512-Sz07mnQrTekFWLz5BMjOzHl/+NooTdW8F8kDQxjWwbpOJcnoSg4vUDng8d/WR1wOxM0O+CY9Zw0nR054riNYtQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/free-brands-svg-icons/6.2.1:
+    resolution: {integrity: sha512-L8l4MfdHPmZlJ72PvzdfwOwbwcCAL0vx48tJRnI6u1PJXh+j2f3yDoKyQgO3qjEsgD5Fr2tQV/cPP8F/k6aUig==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.2.1
+    dev: false
+
+  /@fortawesome/react-fontawesome/0.2.0_react@18.2.0:
+    resolution: {integrity: sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==}
+    peerDependencies:
+      '@fortawesome/fontawesome-svg-core': ~1 || ~6
+      react: '>=16.3'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /@headlessui/react/1.7.4_react-dom@18.2.0+react@18.2.0:
