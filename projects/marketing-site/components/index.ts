@@ -6,9 +6,11 @@ import MainHeroSection from "./MainHeroSection/MainHeroSection";
 import ProposalL2 from "./Proposals/ProposalL2";
 import RedSplash from "./Splashes/RedSplash";
 import SimpleNavbar from "./SimpleNavbar/SimpleNavbar";
+import CoreTeam from "./Team/CoreTeam";
 
 export {
   BlueSplash,
+  CoreTeam,
   DarkNavbar,
   FeaturesList,
   Layout,
