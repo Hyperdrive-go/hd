@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import distractionChadBunny from "@/images/chadbit.jpg";
+import dicaso from "@/images/dicaso.jpg";
+import weston from "@/images/pfer-weston.png";
 
 const people = [
   {
@@ -8,6 +10,20 @@ const people = [
     role: "Engineering Lead",
     imageUrl: distractionChadBunny,
     twitterUrl: "https://twitter.com/DistractionBoy_",
+    linkedinUrl: null,
+  },
+  {
+    name: "Dicaso",
+    role: "Creative Director",
+    imageUrl: dicaso,
+    twitterUrl: "https://twitter.com/Dicaso5",
+    linkedinUrl: null,
+  },
+  {
+    name: "Weston Nelson",
+    role: "Treasury Management",
+    imageUrl: weston,
+    twitterUrl: "https://twitter.com/westonnelson",
     linkedinUrl: null,
   },
 ];
@@ -42,6 +58,7 @@ export default function CoreTeam() {
                       className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56"
                       src={person.imageUrl}
                       alt=""
+                      priority
                     />
                   </div>
 
