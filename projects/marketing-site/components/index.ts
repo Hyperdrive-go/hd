@@ -1,6 +1,7 @@
 import BlueSplash from "./Splashes/BlueSplash";
 import DarkNavbar from "./DarkNavbar/DarkNavbar";
 import FeaturesList from "./FeaturesList/FeaturesList";
+import Footer from "./Footer/Footer";
 import Layout from "./Layout/Layout";
 import MainHeroSection from "./MainHeroSection/MainHeroSection";
 import ProposalL2 from "./Proposals/ProposalL2";
@@ -13,6 +14,7 @@ export {
   CoreTeam,
   DarkNavbar,
   FeaturesList,
+  Footer,
   Layout,
   MainHeroSection,
   ProposalL2,

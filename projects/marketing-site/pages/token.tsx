@@ -1,5 +1,6 @@
 import {
   BlueSplash,
+  Footer,
   Layout,
   RedSplash,
   SimpleNavbar,
@@ -27,6 +28,7 @@ const LandingPage = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </Layout>
   );
 };

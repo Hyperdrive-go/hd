@@ -1,5 +1,6 @@
 import {
   BlueSplash,
+  Footer,
   Layout,
   ProposalL2,
   RedSplash,
@@ -32,6 +33,7 @@ const LandingPage = () => {
           <ProposalL2 />
         </div>
       </main>
+      <Footer />
     </Layout>
   );
 };
