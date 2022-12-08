@@ -5,6 +5,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logoSVG from "@/images/hd_logo_small.svg";
 import { useState } from "react";
+import SwitchChainNavBar from "./SwitchChainNavBar";
+import SwitchLanguage from "./SwitchLanguage";
+import SwitchTemplateMode from "./SwitchTemplateMode";
 
 const navigation = [
   { name: "Vision", href: "/" },
@@ -56,6 +59,9 @@ const SimpleNavbar = () => {
             ))}
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+            <SwitchChainNavBar/>
+            <SwitchLanguage/>
+            <SwitchTemplateMode/>
             <a
               href="#"
               className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-100 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20"
