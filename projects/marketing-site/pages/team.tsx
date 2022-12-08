@@ -1,5 +1,6 @@
 import {
   BlueSplash,
+  Contributors,
   Footer,
   Layout,
   RedSplash,
@@ -18,6 +19,9 @@ const LandingPage = () => {
       <main>
         <div className="rounded-lg mx-auto max-w-7xl px-4 pb-12 pt-24 sm:px-6 lg:px-8">
           <CoreTeam />
+        </div>
+        <div className="rounded-lg mx-auto max-w-7xl px-4 pb-12 pt-24 sm:px-6 lg:px-8">
+          <Contributors />
         </div>
       </main>
       <Footer />
