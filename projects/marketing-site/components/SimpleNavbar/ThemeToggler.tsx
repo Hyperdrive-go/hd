@@ -1,20 +1,22 @@
 import { Menu, Switch } from '@headlessui/react'
 import { MoonIcon } from '@heroicons/react/20/solid'
 import clsx from "clsx";
+import { useTheme } from 'next-themes';
+import React, { useState, useEffect } from 'react';
 
-import React, { useState } from 'react';
 
+export default function ThemeToggler() {
+  const { theme, setTheme } = useTheme();
 
-export default function SwitchTemplateMode() {
-  const [enabled, setEnabled] = useState(false)
+  const [enabled, setEnabled] = useState(theme === 'dark' ? true : false)
 
   return (
       <Menu.Item>
         {({ active }) => (
           <div
             className={clsx(
-              active ? "bg-gray-100 w-full cursor-pointer" : "",
-              "px-4 py-2 text-sm text-gray-700 inline-flex"
+              active ? "dark:bg-slate-500 bg-gray-100 w-full cursor-pointer" : "",
+              "px-4 py-2 text-sm dark:text-white text-gray-700 inline-flex"
             )}
           >
             <MoonIcon className="h-6 w-6 mr-2" aria-hidden="true" />
@@ -22,7 +24,11 @@ export default function SwitchTemplateMode() {
             <div className="absolute right-0 mr-4 inline-flex">
               <Switch
                 checked={enabled}
-                onChange={setEnabled}
+                // onChange={setEnabled}
+                onChange={() => {
+                  setEnabled(!enabled)
+                  setTheme(theme === 'light' ? 'dark' : 'light')
+                }}
                 className={`${
                   enabled ? 'bg-blue-600' : 'bg-gray-200'
                 }  inline-flex h-6 w-11 items-center rounded-full`}
