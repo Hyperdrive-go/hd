@@ -25,7 +25,7 @@ const MainHeroSection = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl text-white">
                   A MarketPlace for Creators Built by the Community
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-200 sm:text-center">
