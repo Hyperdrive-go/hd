@@ -11,11 +11,11 @@ const people = [
 
 export default function Contributors() {
   return (
-    <div className="dark:bg-gray-900 bg-gray-200 rounded-lg">
+    <div className="dark:bg-gray-900 bg-gray-50 rounded-lg">
       <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl dark:text-white text-black">
               Contributors
             </h2>
             <p className="text-xl dark:text-gray-300 text-gray-800">
