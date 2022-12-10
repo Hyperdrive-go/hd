@@ -11,7 +11,7 @@ import CoreTeam from "@/components/Team/CoreTeam";
 const LandingPage = () => {
   return (
     <Layout>
-      <div className="isolate bg-black">
+      <div className="isolate dark:bg-black bg-white">
         <BlueSplash />
         <SimpleNavbar />
         <RedSplash height="lg" />

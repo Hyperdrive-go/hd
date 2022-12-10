@@ -44,13 +44,13 @@ const features = [
 
 const FeaturesList: React.FC = () => {
   return (
-    <div className="bg-black">
+    <div className="dark:bg-black bg-white">
       <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight dark:text-gray-100 text-gray-700 sm:text-4xl">
             All-in-one platform
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-gray-300">
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-8 dark:text-gray-300 text-gray-600">
             We&apos;ve reinvisioned a marketplace for the people from the ground
             up and found that these were the things on the top of your list.
           </p>
@@ -63,11 +63,11 @@ const FeaturesList: React.FC = () => {
                   className="absolute mt-1 h-6 w-6 text-red-600"
                   aria-hidden="true"
                 />
-                <p className="ml-10 text-lg font-semibold leading-8 text-gray-100">
+                <p className="ml-10 text-lg font-semibold leading-8 dark:text-gray-100 text-gray-700">
                   {feature.name}
                 </p>
               </dt>
-              <dd className="mt-2 ml-10 text-base leading-7 text-gray-300">
+              <dd className="mt-2 ml-10 text-base leading-7 dark:text-gray-300 text-gray-600">
                 {feature.description}
               </dd>
             </div>
