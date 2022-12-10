@@ -53,7 +53,8 @@ const SimpleNavbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="font-semibold text-gray-100 hover:text-gray-100"
+                className="font-semibold dark:text-gray-100 text-black 
+                dark:hover:text-gray-100 hover:text-gray-500"
               >
                 {item.name}
               </a>

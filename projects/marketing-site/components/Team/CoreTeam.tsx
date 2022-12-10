@@ -30,14 +30,14 @@ const people = [
 
 export default function CoreTeam() {
   return (
-    <div className="bg-gray-900 rounded-lg">
+    <div className="dark:bg-gray-900 bg-gray-50 rounded-lg">
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight dark:text-white text-black sm:text-4xl">
               Meet our team
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl dark:text-gray-300 text-black">
               L2 Maxis coming together to provide a unique perspective on
               trading JPEGs.
             </p>
@@ -49,7 +49,7 @@ export default function CoreTeam() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className="rounded-lg bg-gray-800 py-10 px-6 text-center xl:px-10 xl:text-left"
+                className="rounded-lg dark:bg-gray-800 bg-gray-300 py-10 px-6 text-center xl:px-10 xl:text-left"
               >
                 <div className="space-y-6 xl:space-y-10">
                   <div>
@@ -64,15 +64,15 @@ export default function CoreTeam() {
 
                   <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                     <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3 className="text-white">{person.name}</h3>
-                      <p className="text-indigo-400">{person.role}</p>
+                      <h3 className="dark:text-white text-gray-900">{person.name}</h3>
+                      <p className="dark-text-indigo-400 text-indigo-600">{person.role}</p>
                     </div>
 
                     <ul role="list" className="flex justify-center space-x-5">
                       <li>
                         <a
                           href={person.twitterUrl}
-                          className="text-gray-400 hover:text-gray-300"
+                          className="text-blue-500 hover:text-gray-300"
                         >
                           <span className="sr-only">Twitter</span>
                           <svg
