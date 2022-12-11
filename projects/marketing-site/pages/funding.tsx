@@ -6,8 +6,12 @@ import {
   RedSplash,
   SimpleNavbar,
 } from "@/components/index";
+import commonLang from "@/lang/common.json";
+import { useRouter } from 'next/router';
 
 const LandingPage = () => {
+  const { locale } = useRouter();
+
   return (
     <Layout>
       <div className="isolate dark:bg-black bg-white">
@@ -20,11 +24,10 @@ const LandingPage = () => {
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl dark:text-white text-black">
-                L2DAO Proposal
+                {commonLang.funding_page.filter(j => j.locale === locale)[0]["funding_title"]}
               </h1>
               <p className="mt-6 text-lg leading-8 dark:text-gray-200 text-gray-700 sm:text-center">
-                To kick things off our first proposal is being submitted for
-                review today, Dec 6.
+                {commonLang.funding_page.filter(j => j.locale === locale)[0]["funding_desc"]}
               </p>
             </div>
           </div>
