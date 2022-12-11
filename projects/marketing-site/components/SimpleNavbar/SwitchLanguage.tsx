@@ -21,7 +21,7 @@ export default function SwitchLanguage() {
         {commonLang.menu.filter(j => j.locale === locale)[0]["language"]} 
         <Menu as="div" >
             <Menu.Button className="absolute right-0 mr-4 inline-flex">
-              {locale.substring(0,2)} <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
+              {locale?.substring(0,2)} <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
             </Menu.Button>
             <Transition
               as={Fragment}
@@ -34,7 +34,7 @@ export default function SwitchLanguage() {
             >
               <Menu.Items className="absolute left-0 z-50 -mt-3 w-48 origin-top-right rounded-md 
               dark:bg-slate-800 bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                {locales.map((l, i) => {
+                {locales?.map((l, i) => {
                   return (<Menu.Item key={l}>
                     {({ active }) => (
                       <div
