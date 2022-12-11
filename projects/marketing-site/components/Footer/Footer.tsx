@@ -5,6 +5,7 @@ import React from "react";
 import { useRouter } from 'next/router';
 import commonLang from "@/lang/common.json";
 import Link from 'next/link';
+import NavigationMain from '@/libs/interface/navigation';
 
 const navigation = {
   main: [
@@ -45,7 +46,7 @@ export default function Footer() {
             <div key={item.name} className="px-5 py-2">
               <Link href={item.href} className="text-base dark:text-gray-400 dark:hover:text-gray-50 
               text-gray-700 hover:text-gray-500">
-                {commonLang.menu.filter(j => j.locale === locale)[0][item.name]} 
+                {commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]}
               </Link>
             </div>
           ))}

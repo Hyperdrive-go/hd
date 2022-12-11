@@ -37,10 +37,10 @@ export default function SwitchLanguage() {
                 {locales.map((l, i) => {
                   return (<Menu.Item>
                     {({ active }) => (
-                      <div
+                      <div key={l}
                         className={clsx(
                           active ? "dark:bg-slate-500 bg-gray-100 cursor-pointer" : "",
-                          "px-4 py-2 text-sm dark:text-white text-gray-700 inline-flex"
+                          "px-4 py-2 text-sm dark:text-white text-gray-700 inline-flex" 
                         )}
                       >
                         <Link href={asPath} locale={l} className="inline-flex w-40">

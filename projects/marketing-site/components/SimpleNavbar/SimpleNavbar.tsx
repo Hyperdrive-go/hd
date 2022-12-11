@@ -12,6 +12,7 @@ import clsx from "clsx";
 import { useRouter } from 'next/router';
 import commonLang from "@/lang/common.json";
 import Link from 'next/link';
+import NavigationMain from '@/libs/interface/navigation';
 
 const navigation = [
   { name: "vision", href: "/" },
@@ -56,10 +57,12 @@ const SimpleNavbar = () => {
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
             {navigation.map((item) => (
-              <Link href={item.href} className="font-semibold dark:text-gray-100 text-black 
-              dark:hover:text-gray-100 hover:text-gray-500">
-                {commonLang.menu.filter(j => j.locale === locale)[0][item.name]} 
-              </Link>
+              <div key={item.name}>
+                <Link href={item.href} className="font-semibold dark:text-gray-100 text-black 
+                dark:hover:text-gray-100 hover:text-gray-500">
+                  <span>{commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]}</span>
+                </Link>
+              </div>
             ))}
 
           </div>
@@ -134,10 +137,12 @@ const SimpleNavbar = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <Link href={item.href} className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 
-                    leading-7 text-gray-900 hover:bg-gray-400/10">
-                      {commonLang.menu.filter(j => j.locale === locale)[0][item.name]} 
-                    </Link>
+                    <div key={item.name}>
+                      <Link href={item.href} className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 
+                      leading-7 text-gray-900 hover:bg-gray-400/10">
+                        {commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]} 
+                      </Link>
+                    </div>
                   ))}
                 </div>
                 <div className="py-6">
