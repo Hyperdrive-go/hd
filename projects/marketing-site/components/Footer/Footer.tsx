@@ -2,14 +2,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 import React from "react";
-import Image from "next/image";
+import { useRouter } from 'next/router';
+import commonLang from "@/lang/common.json";
+import Link from 'next/link';
+import NavigationMain from '@/libs/interface/navigation';
 
 const navigation = {
   main: [
-    { name: "Vision", href: "/" },
-    { name: "Team", href: "/team" },
-    { name: "Funding", href: "/funding" },
-    { name: "Token", href: "/token" },
+    { name: "vision", href: "/" },
+    { name: "team", href: "/team" },
+    { name: "funding", href: "/funding" },
+    { name: "token", href: "/token" },
   ],
   social: [
     {
@@ -30,6 +33,8 @@ const navigation = {
 };
 
 export default function Footer() {
+  const { locale } = useRouter();
+
   return (
     <footer className="dark:bg-gray-900 bg-gray-200">
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
@@ -39,13 +44,10 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-base dark:text-gray-400 dark:hover:text-gray-50 
-                text-gray-700 hover:text-gray-500"
-              >
-                {item.name}
-              </a>
+              <Link href={item.href} className="text-base dark:text-gray-400 dark:hover:text-gray-50 
+              text-gray-700 hover:text-gray-500">
+                {commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]}
+              </Link>
             </div>
           ))}
         </nav>

@@ -3,6 +3,8 @@ import Image from "next/image";
 import distractionChadBunny from "@/images/chadbit.jpg";
 import dicaso from "@/images/dicaso.jpg";
 import weston from "@/images/pfer-weston.png";
+import commonLang from "@/lang/common.json";
+import { useRouter } from 'next/router';
 
 const people = [
   {
@@ -29,17 +31,18 @@ const people = [
 ];
 
 export default function CoreTeam() {
+  const { locale } = useRouter();
+
   return (
     <div className="dark:bg-gray-900 bg-gray-50 rounded-lg">
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight dark:text-white text-black sm:text-4xl">
-              Meet our team
+              {commonLang.team_page.filter(j => j.locale === locale)[0]["team_title"]} 
             </h2>
             <p className="text-xl dark:text-gray-300 text-black">
-              L2 Maxis coming together to provide a unique perspective on
-              trading JPEGs.
+              {commonLang.team_page.filter(j => j.locale === locale)[0]["team_desc"]} 
             </p>
           </div>
           <ul

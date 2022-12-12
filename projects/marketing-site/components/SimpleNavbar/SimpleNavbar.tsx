@@ -9,16 +9,23 @@ import { useState, Fragment } from "react";
 import SwitchLanguage from "./SwitchLanguage";
 import ThemeToggler from "./ThemeToggler";
 import clsx from "clsx";
+import { useRouter } from 'next/router';
+import commonLang from "@/lang/common.json";
+import Link from 'next/link';
+import NavigationMain from '@/libs/interface/navigation';
 
 const navigation = [
-  { name: "Vision", href: "/" },
-  { name: "Team", href: "/team" },
-  { name: "Funding", href: "/funding" },
-  { name: "Token", href: "/token" },
+  { name: "vision", href: "/" },
+  { name: "team", href: "/team" },
+  { name: "funding", href: "/funding" },
+  { name: "token", href: "/token" },
 ];
 
 const SimpleNavbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const { locale } = useRouter();
+
   return (
     <div className="px-6 pt-6 lg:px-8">
       <div>
@@ -50,15 +57,14 @@ const SimpleNavbar = () => {
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="font-semibold dark:text-gray-100 text-black 
-                dark:hover:text-gray-100 hover:text-gray-500"
-              >
-                {item.name}
-              </a>
+              <div key={item.name}>
+                <Link href={item.href} className="font-semibold dark:text-gray-100 text-black 
+                dark:hover:text-gray-100 hover:text-gray-500">
+                  <span>{commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]}</span>
+                </Link>
+              </div>
             ))}
+
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
             {/* Profile dropdown */}
@@ -92,7 +98,7 @@ const SimpleNavbar = () => {
                         )}
                       >
                         <ArrowRightOnRectangleIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-                        Sign out
+                        {commonLang.menu.filter(j => j.locale === locale)[0]["sign_out"]} 
                       </div>
                     )}
                   </Menu.Item>
@@ -131,13 +137,12 @@ const SimpleNavbar = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
-                    >
-                      {item.name}
-                    </a>
+                    <div key={item.name}>
+                      <Link href={item.href} className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 
+                      leading-7 text-gray-900 hover:bg-gray-400/10">
+                        {commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]} 
+                      </Link>
+                    </div>
                   ))}
                 </div>
                 <div className="py-6">

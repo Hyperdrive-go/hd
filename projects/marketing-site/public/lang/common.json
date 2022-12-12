@@ -1,0 +1,242 @@
+{
+    "language": [
+        {
+            "locale": "en-US",
+            "name": "English"
+        },
+        {
+            "locale": "en-US",
+            "name": "Vietnamese"
+        },
+        {
+            "locale": "vi-VN",
+            "name": "English"
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Tiếng Việt"
+        }
+    ],
+    "menu": [
+        {
+            "locale": "en-US",
+            "vision": "Vision",
+            "team": "Team",
+            "funding": "Funding",
+            "token": "Token",
+            "language": "Language",
+            "dark_mode": "Dark Mode",
+            "sign_out": "Sign out"
+        },
+        {
+            "locale": "vi-VN",
+            "vision": "Tầm nhìn",
+            "team": "Đội ngũ",
+            "funding": "Kinh phí",
+            "token": "Token",
+            "language": "Ngôn ngữ",
+            "dark_mode": "Chế độ tối",
+            "sign_out": "Đăng xuất"
+        }
+    ],
+    "vision_page": [
+        {
+            "locale": "en-US",
+            "announce": "Announcing our first round of funding.",
+            "readmore": "Read more",
+            "top_title": "A MarketPlace for Creators Built by the Community",
+            "top_desc": "Built from the ground up with Creators in mind, Hyperdrive will deliver a unique experience that changes with the products and pioneers of the ecosystem.",
+            "proposal": "Proposal",
+            "team": "Team",
+            "feature_title": "All-in-one platform",
+            "feature_desc": "We've reinvisioned a marketplace for the people from the ground up and found that these were the things on the top of your list."
+        },
+        {
+            "locale": "vi-VN",
+            "announce": "Thông báo vòng gọi vốn đầu tiên của chúng tôi.",
+            "readmore": "Xem thêm",
+            "top_title": "Sàn giao dịch NFT dành cho các nhà sáng tạo nội dung",
+            "top_desc": "Được xây dựng dành cho người sáng tạo nội dung, Hyperdrive mang lại trải nghiệm độc đáo về NFT - đồng thời là một trong những sản phẩm tiên phong trong hệ sinh thái Layer2",
+            "proposal": "Đề xuất",
+            "team": "Đội ngũ",
+            "feature_title": "Tất cả tính năng trong một nền tảng",
+            "feature_desc": "Chúng tôi đã thẩm định và xây dụng một sàn giao dịch NFT vì cộng đồng, dưới đây là các tính năng của sản phẩm."
+        }
+    ],
+    "vision_feature": [
+        {
+            "locale": "en-US",
+            "name": "Hyperspeed",
+            "description":
+                "By using the latest tech and positioning our servers around the world, Hyperdive will load fast and run smooth."
+        },
+        {
+            "locale": "en-US",
+            "name": "Creator Focused",
+            "description":
+                "Customizable NFT Creator pages that bring a storefront to life and combine collections and off-chain activity."
+        },
+        {
+            "locale": "en-US",
+            "name": "Bot Protection",
+            "description":
+                "We want your marketplace to grow organically and help ensure we are always open for business."
+        },
+        {
+            "locale": "en-US",
+            "name": "Expert Team",
+            "description":
+                "We come from well known projects on L2's and have official backgrounds in engineering and finance."
+        },
+        {
+            "locale": "en-US",
+            "name": "Open Source",
+            "description":
+                "Transparency is so key to crypto and you deserve to know when you buy with us, what you see is what you get."
+        },
+        {
+            "locale": "en-US",
+            "name": "Community Maintained",
+            "description":
+                "Want to add a feature or integrate an api to help improve the Marketplace? Hack around and find out, fren!"
+        },
+        {
+            "locale": "en-US",
+            "name": "Multilingual",
+            "description":
+                "You should be able to experience the Marketplace as you would in your own town."
+        },
+        {
+            "locale": "en-US",
+            "name": "Social Media",
+            "description":
+                "With a focus on decentralized social media solutions, we intend to increase retention on Creator pages."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Siêu tốc",
+            "description":
+                "Bằng việc sử dụng công nghệ mới nhất và có hệ thống máy chủ trên toàn cầu. Trải nghiệm trên Hyperdrive sẽ nhanh và mượt."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Người sáng tạo nội dung",
+            "description":
+                "Sản phẩm cho phép người sáng tạo nội dung tuỳ chỉnh NFT và đăng bộ sưu tập của họ lên cửa hàng"
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Bot Protection",
+            "description":
+                "Chúng tôi đảm bảo thị trường phát triển một cách tự nhiên và luôn chào đón cho doanh nghiệp."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Đội ngũ chuyên gia",
+            "description":
+                "Chúng tôi là những chuyên gia đến từ các dự án Layer2 nổi tiếng và có kiến thức chuyên môn về kỹ thuật, tài chính."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Mã nguồn mở",
+            "description":
+                "Tính minh bạch là điều quan trọng trong thị trường tiền mã hoá và bạn có thể kiểm tra nó một cách dễ dàng."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Cộng đồng",
+            "description":
+                "Chúng tôi chào đón sự đóng góp, phản hồi từ cộng đồng để giúp sản phẩm trở nên tốt hơn."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Đa ngôn ngữ",
+            "description":
+                "Bạn sẽ được trải nghiệm thị trường với nhiều ngôn ngữ khác nhau."
+        },
+        {
+            "locale": "vi-VN",
+            "name": "Mạng xã hội",
+            "description":
+                "Với các giảp pháp mạng xã hội phi tập trung, chúng tôi gia tăng tỉ lệ tiếp cận người dùng từ sản phẩm."
+        }
+    ],
+    "funding_page": [
+        {
+            "locale": "en-US",
+            "funding_title": "L2DAO Proposal",
+            "funding_desc": "To kick things off our first proposal is being submitted for review today, Dec 6.",
+            "introducing": "Introducing",
+            "introducing_title": "Hyperdrive NFT Exchange",
+            "introducing_desc": "Hey all - DisctractionBoy here to share a proposal with the L2DAO community for Round 4 of the OPIncubator, and formally apply for consideration for LTIP-6. On behalf of the newly formed team building the Hyperdrive L2 NFT Exchange, I wanted to submit this proposal for the OPIncubator $OP token grant and open up this discussion to the L2DAO community for review and discussion.",
+            "summary": "Summary",
+            "summary_desc1": "Since the announcement that the current go-to L2 NFT Marketplace solutions are being sunsetted, a race has begun to provide an alternative. A few L2 Maxis have formed an all-star team with a novel approach to build a self-sustaining marketplace, Hyperdrive. This will be unique in that our vision is for Hyperdrive to authentically be a marketplace for the people, with customizable Creator pages and an open-sourced codebase from the start. Additionally, incentives for becoming a code contributor will ensure those most invested in the success of the project will be successful themselves, and that the marketplace never loses sight of its users’ needs - creating a long-term positive reinforcement loop.",
+            "summary_desc2": "our vision is for Hyperdrive to authentically be a marketplace for the people, with customizable Creator pages and an open-sourced codebase from the start.",
+            "detail": "The Details",
+            "background": "Background",
+            "background_title1": "Number of OP tokens awarded to Hyperdrive if vote passes the OPIncubator:",
+            "background_title2": "Proposal for token distribution",
+            "background_title3": "How will the OP tokens be distributed?",
+            "background_title4": "Over what period of time will the tokens be distributed?",
+            "background_title5": "How will this distribution support the Layer2DAO vision?",
+            "background_desc1": "When we got together as a new team focused on one goal (on the topic of L2 NFT Marketplaces) we started seeing more and more opportunities for a better user experience. We started with the idea that this should be a marketplace that is as every bit as diverse as it is separate; but with commingled communities. Our team is comprised of experts in their fields and we have already challenged each other on core concepts but one thing we came into a consensus with early on was that this would be an L2-focused product because we firmly believe in L2&apos;s as the sane alternative to high fees, and because of how engaged their communities are. Even through this bear market, the OptiChads and some other projects have continued to show promising volume and rising floor prices.",
+            "background_desc2": "Dicaso, the creator of OptiChads, the first NFT project on Optimism to receive funding through OP Governance, is leading the charge on Hyperdrive to ensure economic incentives are aligned with its user base. DistractionBoy is a co-founder of Optimistic Bunnies and OptiChads, and is a Senior Software Engineer (specializing in User Interfaces) with over 8 years in enterprise-level applications and 13 years of experience as a freelancer for hire. Weston Nelson, brings a background of finance and strategy to the team, working in TradFi for several years, with most time spent at Fidelity Investments, before transitioning to Web3 full-time. He’s also part of Layer2DAO, and will contribute to Hyperdrive in conducting market research into future airdrops and incentives for core contributors.",
+            "background_desc3": "27,500 $OP tokens - with the tokens sent to the Hyperdrive Team Multisig address on Optimism which can be viewed on-chain at:",
+            "background_desc4": "Additionally for reference, with Hyperdrive&apos;s plans for full Layer2 Ethereum NFT growth, the team has initialized the Arbitrum Multisig as well, for cross-rollup operations. This Safe can be viewed on-chain at:",
+            "background_desc5": "The 3 core team members are the signers on these Safes and have experience with managing digital assets safely and responsibly.",
+            "background_desc6": "Hyperdrive’s goal here is to provide a novel and unique platform for the L2 NFT ecosystem. This means building flexible and robust reward mechanisms for users and creators - beginning with the creation of a token native to the exchange, $HD. This is to facilitate value creation and decentralized governance.",
+            "background_desc7": "15,500 OP (56%) towards new NFT marketplace build, token launch",
+            "background_desc8": "12,000 OP (46%) to set up extra incentives for bringing new creators and artists to the platform and bootstrapping liquidity for the DAO.",
+            "background_desc9": "We expect to use this grant funding within 2 months.",
+            "background_desc10": "Many people in Layer2DAO have come to enjoy trading NFTs on L2 and we plan to build this out and attract even more users to the L2 NFT ecosystem, creating a win-win scenario for all.",
+            "background_link1": "Hyperdrive Multisig - Optimism",
+            "background_link2": "Hyperdrive Multisig - Arbitrum"
+        },
+        {
+            "locale": "vi-VN",
+            "funding_title": "L2DAO Đề xuất",
+            "funding_desc": "Đề xuất đầu tiên của chúng tôi đã được tham khảo và tiến hành từ hôm nay, Ngày 6 tháng 12",
+            "introducing": "Giới thiệu",
+            "introducing_title": "Hyperdrive NFT Exchange",
+            "introducing_desc": "Xin chào tất cả - Tôi là DisctractionBoy ở đây để chia sẻ đề xuất từ cộng đồng L2DAO cho vòng 4 của OPIncubator và chính thức đăng ký cho đề xuất của LTIP-6. Thay mặt nhóm - việc thành lập Hyperdrive L2 NFT Exchange, tôi muốn gửi đề xuất này để xin tài trợ token $OP từ OPIncubator và mở cuộc thảo luận cho cộng đồng L2DAO để xem xét và thảo luận.",
+            "summary": "Sơ lược",
+            "summary_desc1": "Từ khi sàn giao dịch NFT layer 2 hiện tại đang ngừng hoạt độnng, một cuộc đua mới đã bắt đầu để cung cấp giải pháp thay thể. Một số thành viên từ Layer2 đã tiến hành xây dựng và thành lập nhóm gọi là Hyperdrive. Điều này cho thấy Hyperdrive sẽ là sàn giao dịch phục vụ cộng đồng và là mã nguồn mở cho các nhà sáng tạo nội dung. Ngoài ra sẽ có sự khích lệ, ưu đãi cho những người đóng góp dự án, điều này tạo ra một điều tích cực trong tương lai dài hạn.",
+            "summary_desc2": "tầm nhìn của Hyperdrive là tạo ra một thị trường NFT dành cho mọi người, cho phép các nhà sáng tạo nội dung chỉnh sửa và truyền tải ngay trên sản phẩm.",
+            "detail": "Chi tiết",
+            "background": "Nội dung",
+            "background_title1": "Số lượng token $OP được cấp cho Hyperdrive nếu số phiếu bầu đạt được trong OPIncubator:",
+            "background_title2": "Đề xuất phân phối mã thông báo",
+            "background_title3": "Mã token $OP sẽ được phân phối như thế nào?",
+            "background_title4": "Trong khoảng thời gian nào mã token sẽ được phân phối?",
+            "background_title5": "Bản phân phối này hỗ trợ cộng đồng Layer2DAO như thế nào?",
+            "background_desc1": "Khi chúng tôi tập hợp lại thành một nhóm mới tập trung vào một mục tiêu (Layer2 NFT Marketplace), chúng tôi bắt đầu thấy ngày càng nhiều cơ hội để trải nghiệm người dùng tốt hơn. Chúng tôi bắt đầu với ý tưởng rằng đây phải là một thị trường vừa đa dạng vừa riêng biệt và có sự đóng góp của nhiều cộng đồng. Nhóm của chúng tôi gồm các chuyên gia trong nhiều lĩnh vực và chúng tôi đã thống nhất lẫn nhau về việc tạo lập ra sản phẩm Layer2. Bởi vì Layer2 là một giải pháp thay thế tốt với phí gas rẻ, nhanh. Ngay cả trong thị trường gấu này, Optichads và một số dự án khác vẫn tiếp tục cho thấy khối lượng và giá sàn NFT tăng.",
+            "background_desc2": "Dicaso, người sáng lập Optichads, dự án NFT đầu tiên được nhận tài trợ từ OP Governance, đang phụ trách xây dụng Hyperdrive để đảm bảo lợi nhuận và chi phí cho người dùng nó. DistractionBoy là người đồng sáng lập của Optimistic Bunnies và OptiChads, đồng thời là kỹ sư phần mềm cấp cao (chuyên về giao diện người dùng) với hơn 8 năm làm việc trong các ứng dụng cấp doanh nghiệp và 13 năm kinh nghiệm làm freelancer. Weston Nelson - mang đến kiến thức cơ bản về tài chính và chiến lược cho nhóm, đã làm việc tại TradFi trong nhiều năm, dành phần lớn thời gian tại Fidelity Investments trước khi chuyển sang làm toàn thời gian cho công việc Web3. Anh ấy cũng là một người đóng góp cho cộng đồng Layer2DAO và sẽ đóng góp cho Hyperdrive trong việc nghiên cứu thị trường về các đợt airdrop trong tương lai và các lợi ích cho những người đóng góp.",
+            "background_desc3": "27,500 $OP tokens - với các token được gửi đến địa chỉ Multisig của nhóm Hyperdrive trên mạng lưới Optimism có thể được xem trên chuỗi khối tại:",
+            "background_desc4": "Ngoài ra, Hyperdrive có kế hoạch phát triển đầy đủ của Layer2 Ethereum NFT, nhóm đã khởi tạo Arbitrum Multisig. Thông tin trên mạng lưới Arbitrum có thể được xem trên chuối khối tại:",
+            "background_desc5": "Ba thành viên cốt lõi của nhóm đã ký trên 'Safers' - họ là người có kinh nghiệm trong việc quản lý tài sản kỹ thuật số một cách an toàn và trách nhiệm.",
+            "background_desc6": "Mục tiêu của Hyperdrive là cung cấp một nền tảng mới lạ và độc đáo cho hệ sinh thái Layer2 NFT. Điều này có nghĩa là xây dựng cơ chế trả thưởng linh hoạt và mạnh mẽ cho người sáng tạo nội dung - bắt đầu bằng việc tạo ra token cho dự án gọi là $HD. Điều này tạo điều kiện thuận lợi cho việc tạo ra giá trị và quản trị phi tập trung.",
+            "background_desc7": "15,500 OP (56%) cho việc xây dựng thị trường NFT mới và phát hành token.",
+            "background_desc8": "12,000 OP (46%) để thiết lập các ưu đãi cho những nhà sáng tạo nội dung và tạo tính thanh khoản cho DAO.",
+            "background_desc9": "Chúng tôi mong đợi sẽ sử dụng khoản tài trợ này trong 2 tháng.",
+            "background_desc10": "Nhiều người từ cộng đồng Layer2DAO đã quan tâm tới việc giao  dịch NFT trên Layer2 và chúng tôi dự định xây dựng cũng như thu hút nhiều người dùng hơn nữa vào hệ sinh thái Layer2 NFT. Kịch bản này tạo ra mô hình đôi bên cùng có lợi",
+            "background_link1": "Hyperdrive Multisig - Optimism",
+            "background_link2": "Hyperdrive Multisig - Arbitrum"
+        }
+    ],
+    "team_page": [
+        {
+            "locale": "en-US",
+            "team_title": "Meet our team",
+            "team_desc": "L2 Maxis coming together to provide a unique perspective on trading JPEGs.",
+            "contributor_title": "Contributors",
+            "contributor_desc": "Hyperdrive is a result of the hard work from the community."
+        },
+        {
+            "locale": "vi-VN",
+            "team_title": "Đội ngũ của chúng tôi",
+            "team_desc": "Chúng tôi - những chuyên gia về Layer2 mong muốn tạo lập một sàn giao dịch NFT chuyên biệt.",
+            "contributor_title": "Người đóng góp",
+            "contributor_desc": "Hyperdrive ghi nhận công lao đóng góp từ cộng đồng."
+        }
+    ]
+}

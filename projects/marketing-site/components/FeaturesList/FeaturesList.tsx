@@ -1,62 +1,23 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
-const features = [
-  {
-    name: "Hyperspeed",
-    description:
-      "By using the latest tech and positioning our servers around the world, Hyperdive will load fast and run smooth.",
-  },
-  {
-    name: "Creator Focused",
-    description:
-      "Customizeable NFT Creator pages that bring a storefront to life and combine collections and off-chain activity.",
-  },
-  {
-    name: "Bot Protection",
-    description:
-      "We want your marketplace to grow organically and help ensure we are always open for business.",
-  },
-  {
-    name: "Expert Team",
-    description:
-      "We come from well known projects on L2's and have official backgrounds in engineering and finance.",
-  },
-  {
-    name: "Open Source",
-    description:
-      "Transparency is so key to crypto and you deserve to know when you buy with us, what you see is what you get.",
-  },
-  {
-    name: "Community Maintained",
-    description:
-      "Want to add a feature or integrate an api to help improve the Marketplace? Hack around and find out, fren!",
-  },
-  {
-    name: "Multilingual",
-    description:
-      "You should be able to experience the Marketplace as you would in your own town.",
-  },
-  {
-    name: "Social Media",
-    description:
-      "With a focus on decentralized social media solutions, we intend to increase retention on Creator pages.",
-  },
-];
+import commonLang from "@/lang/common.json";
+import { useRouter } from 'next/router';
 
 const FeaturesList: React.FC = () => {
+  const { locale } = useRouter();
+
   return (
     <div className="dark:bg-black bg-white">
       <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight dark:text-gray-100 text-gray-700 sm:text-4xl">
-            All-in-one platform
+            {commonLang.vision_page.filter(j => j.locale === locale)[0]["feature_title"]}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg leading-8 dark:text-gray-300 text-gray-600">
-            We&apos;ve reinvisioned a marketplace for the people from the ground
-            up and found that these were the things on the top of your list.
+            {commonLang.vision_page.filter(j => j.locale === locale)[0]["feature_desc"]}
           </p>
         </div>
         <dl className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
-          {features.map((feature) => (
+          {commonLang.vision_feature.filter(j => j.locale === locale).map((feature) => (
             <div key={feature.name} className="relative">
               <dt>
                 <CheckIcon

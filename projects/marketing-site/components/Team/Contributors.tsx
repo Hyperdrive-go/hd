@@ -1,4 +1,6 @@
 import Image from "next/image";
+import commonLang from "@/lang/common.json";
+import { useRouter } from 'next/router';
 
 const people = [
   {
@@ -10,16 +12,18 @@ const people = [
 ];
 
 export default function Contributors() {
+  const { locale } = useRouter();
+
   return (
     <div className="dark:bg-gray-900 bg-gray-50 rounded-lg">
       <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl dark:text-white text-black">
-              Contributors
+              {commonLang.team_page.filter(j => j.locale === locale)[0]["contributor_title"]} 
             </h2>
             <p className="text-xl dark:text-gray-300 text-gray-800">
-              Hyperdrive is a result of the hard work from the community.
+              {commonLang.team_page.filter(j => j.locale === locale)[0]["contributor_desc"]} 
             </p>
           </div>
           <ul
