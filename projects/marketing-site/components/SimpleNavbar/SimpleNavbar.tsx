@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 import commonLang from "@/lang/common.json";
 import Link from 'next/link';
 import NavigationMain from '@/libs/interface/navigation';
+import MobileNavbar from "./MobileNavbar";
 
 const navigation = [
   { name: "vision", href: "/" },
@@ -52,7 +53,7 @@ const SimpleNavbar = () => {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6 dark:text-white text-black" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
@@ -108,7 +109,7 @@ const SimpleNavbar = () => {
           </div>
         </nav>
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+          <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto dark:bg-black bg-white px-6 py-6 lg:hidden">
             <div className="flex h-9 items-center justify-between">
               <div className="flex">
                 <a href="#" className="-m-1.5 p-1.5">
@@ -125,7 +126,7 @@ const SimpleNavbar = () => {
               <div className="flex">
                 <button
                   type="button"
-                  className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                  className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 dark:text-gray-100 text-gray-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Close menu</span>
@@ -135,24 +136,7 @@ const SimpleNavbar = () => {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <div key={item.name}>
-                      <Link href={item.href} className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 
-                      leading-7 text-gray-900 hover:bg-gray-400/10">
-                        {commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]} 
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
-                  >
-                    Log in
-                  </a>
-                </div>
+                <MobileNavbar/>
               </div>
             </div>
           </Dialog.Panel>

@@ -2,7 +2,7 @@ import { Menu, Switch } from '@headlessui/react'
 import { MoonIcon } from '@heroicons/react/20/solid'
 import clsx from "clsx";
 import { useTheme } from 'next-themes';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import commonLang from "@/lang/common.json";
 import { useRouter } from 'next/router';
 
@@ -11,6 +11,7 @@ export default function ThemeToggler() {
   const [enabled, setEnabled] = useState(theme === 'dark' ? true : false)
 
   const { locale } = useRouter();
+  
   
   return (
       <Menu.Item>
