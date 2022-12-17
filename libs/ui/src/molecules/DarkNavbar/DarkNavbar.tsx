@@ -22,7 +22,7 @@ const links = [
   },
 ];
 
-export default function DarkNavbar() {
+const DarkNavbar = () => {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -278,4 +278,6 @@ export default function DarkNavbar() {
       )}
     </Disclosure>
   );
-}
+};
+
+export default DarkNavbar;
