@@ -147,6 +147,7 @@ importers:
       '@fortawesome/react-fontawesome': ~0.2.0
       '@headlessui/react': ~1.7.4
       '@heroicons/react': ^2.0.13
+      '@shared/ui': workspace:*
       '@tailwindcss/aspect-ratio': ~0.4.2
       '@tailwindcss/forms': ~0.5.3
       '@tailwindcss/typography': ~0.5.8
@@ -172,6 +173,7 @@ importers:
       '@fortawesome/react-fontawesome': 0.2.0_cebe167be39b298c5652d6c4a48e22a6
       '@headlessui/react': 1.7.4_react-dom@18.2.0+react@18.2.0
       '@heroicons/react': 2.0.13_react@18.2.0
+      '@shared/ui': link:../../libs/ui
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
       '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
