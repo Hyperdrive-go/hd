@@ -5,7 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Image from "next/image";
 
-import logoSVG from "@/images/hd_logo_small.svg";
+const logoSVG = require('../../assets/images/hd_logo_small.svg');
 
 const links = [
   {
@@ -22,7 +22,7 @@ const links = [
   },
 ];
 
-export default function DarkNavbar() {
+const DarkNavbar = () => {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -278,4 +278,6 @@ export default function DarkNavbar() {
       )}
     </Disclosure>
   );
-}
+};
+
+export default DarkNavbar;
