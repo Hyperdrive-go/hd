@@ -80,7 +80,7 @@ importers:
 
   ../../projects/aggregate:
     specifiers:
-      '@shared/ui': workspace:*
+      '@libs/ui': workspace:*
       '@types/node': 18.11.12
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
@@ -88,19 +88,21 @@ importers:
       eslint: 8.29.0
       eslint-config-next: 13.0.6
       next: 13.0.6
+      next-transpile-modules: ^10.0.0
       postcss: ^8.4.19
       react: 18.2.0
       react-dom: 18.2.0
       tailwindcss: ^3.2.4
       typescript: 4.9.4
     dependencies:
-      '@shared/ui': link:../../libs/ui
+      '@libs/ui': link:../../libs/ui
       '@types/node': 18.11.12
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       eslint: 8.29.0
       eslint-config-next: 13.0.6_eslint@8.29.0+typescript@4.9.4
       next: 13.0.6_react-dom@18.2.0+react@18.2.0
+      next-transpile-modules: 10.0.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       typescript: 4.9.4
@@ -111,7 +113,7 @@ importers:
 
   ../../projects/creators:
     specifiers:
-      '@shared/ui': workspace:*
+      '@libs/ui': workspace:*
       '@types/node': 18.11.12
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
@@ -125,7 +127,7 @@ importers:
       tailwindcss: ^3.2.4
       typescript: 4.9.4
     dependencies:
-      '@shared/ui': link:../../libs/ui
+      '@libs/ui': link:../../libs/ui
       '@types/node': 18.11.12
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
@@ -147,7 +149,7 @@ importers:
       '@fortawesome/react-fontawesome': ~0.2.0
       '@headlessui/react': ~1.7.4
       '@heroicons/react': ^2.0.13
-      '@shared/ui': workspace:*
+      '@libs/ui': workspace:*
       '@tailwindcss/aspect-ratio': ~0.4.2
       '@tailwindcss/forms': ~0.5.3
       '@tailwindcss/typography': ~0.5.8
@@ -173,7 +175,7 @@ importers:
       '@fortawesome/react-fontawesome': 0.2.0_cebe167be39b298c5652d6c4a48e22a6
       '@headlessui/react': 1.7.4_react-dom@18.2.0+react@18.2.0
       '@heroicons/react': 2.0.13_react@18.2.0
-      '@shared/ui': link:../../libs/ui
+      '@libs/ui': link:../../libs/ui
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
       '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
@@ -8341,6 +8343,12 @@ packages:
       next: 13.0.5_react-dom@18.2.0+react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /next-transpile-modules/10.0.0:
+    resolution: {integrity: sha512-FyeJ++Lm2Fq31gbThiRCrJlYpIY9QaI7A3TjuhQLzOix8ChQrvn5ny4MhfIthS5cy6+uK1AhDRvxVdW17y3Xdw==}
+    dependencies:
+      enhanced-resolve: 5.12.0
     dev: false
 
   /next/13.0.5_react-dom@18.2.0+react@18.2.0:

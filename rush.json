@@ -421,7 +421,7 @@
       "tags": ["frontend-team"]
     },
     {
-      "packageName": "@shared/ui",
+      "packageName": "@libs/ui",
       "projectFolder": "libs/ui",
       "reviewCategory": "production",
       "tags": ["frontend-team"]

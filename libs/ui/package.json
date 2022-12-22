@@ -1,5 +1,5 @@
 {
-  "name": "@shared/ui",
+  "name": "@libs/ui",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -40,7 +40,7 @@
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
-  "main": "index.js",
+  "main": "./src/index.tsx",
   "scripts": {
     "webpack": "webpack",
     "start": "webpack serve",
