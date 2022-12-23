@@ -32,13 +32,6 @@ const DarkNavbar = () => {
               <div className="flex items-center px-2 lg:px-0">
                 <div className="flex-shrink-0">
                   <Image
-                    className="block h-8 w-auto lg:hidden"
-                    src={logoSVG}
-                    height={32}
-                    width={32}
-                    alt="Your Company"
-                  />
-                  <Image
                     className="hidden h-8 w-auto lg:block"
                     src={logoSVG}
                     height={32}
