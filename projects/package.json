@@ -1,6 +1,0 @@
-{
-    "name": "typescript-monorepo",
-    "version": "1.0.0",
-    "private": true,
-    "workspaces": ["project/*"]
-  }
