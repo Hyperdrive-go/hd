@@ -1,6 +1,5 @@
 import BlueSplash from "./Splashes/BlueSplash";
 import Contributors from "./Team/Contributors";
-import DarkNavbar from "./DarkNavbar/DarkNavbar";
 import FeaturesList from "./FeaturesList/FeaturesList";
 import Footer from "./Footer/Footer";
 import Layout from "./Layout/Layout";
@@ -14,7 +13,6 @@ export {
   BlueSplash,
   Contributors,
   CoreTeam,
-  DarkNavbar,
   FeaturesList,
   Footer,
   Layout,

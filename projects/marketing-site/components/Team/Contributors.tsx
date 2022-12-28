@@ -1,6 +1,7 @@
 import Image from "next/image";
 import commonLang from "@/lang/common.json";
 import { useRouter } from 'next/router';
+import daru_vo from "@/images/daru_vo.jpg"
 
 const people = [
   {
@@ -8,7 +9,11 @@ const people = [
     role: "anhfactor",
     imageUrl: "https://avatars.githubusercontent.com/u/13186215?v=4",
   },
-  // More people...
+  {
+    name: "Daru Vo",
+    role: "Designer",
+    imageUrl: daru_vo,
+  },
 ];
 
 export default function Contributors() {

@@ -5,7 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Image from "next/image";
 
-import logoSVG from "@/images/hd_logo_small.svg";
+const logoSVG = require('../../assets/images/hd_logo_small.svg');
 
 const links = [
   {
@@ -22,7 +22,7 @@ const links = [
   },
 ];
 
-export default function DarkNavbar() {
+const DarkNavbar = () => {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -31,13 +31,6 @@ export default function DarkNavbar() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex items-center px-2 lg:px-0">
                 <div className="flex-shrink-0">
-                  <Image
-                    className="block h-8 w-auto lg:hidden"
-                    src={logoSVG}
-                    height={32}
-                    width={32}
-                    alt="Your Company"
-                  />
                   <Image
                     className="hidden h-8 w-auto lg:block"
                     src={logoSVG}
@@ -278,4 +271,6 @@ export default function DarkNavbar() {
       )}
     </Disclosure>
   );
-}
+};
+
+export default DarkNavbar;
