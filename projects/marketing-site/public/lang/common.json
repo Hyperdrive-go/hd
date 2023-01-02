@@ -164,8 +164,8 @@
     "funding_page": [
         {
             "locale": "en-US",
-            "funding_title": "L2DAO Proposal",
-            "funding_desc": "To kick things off our first proposal is being submitted for review today, Dec 6.",
+            "funding_title": "Gitcoin Grant",
+            "funding_desc": "In an effort to kickstart our forever open-source marketplace, we are applying for funding through Gitcoin Grants",
             "introducing": "Introducing",
             "introducing_title": "Hyperdrive NFT Exchange",
             "introducing_desc": "Hey all - DisctractionBoy here to share a proposal with the L2DAO community for Round 4 of the OPIncubator, and formally apply for consideration for LTIP-6. On behalf of the newly formed team building the Hyperdrive L2 NFT Exchange, I wanted to submit this proposal for the OPIncubator $OP token grant and open up this discussion to the L2DAO community for review and discussion.",
@@ -194,8 +194,8 @@
         },
         {
             "locale": "vi-VN",
-            "funding_title": "L2DAO Đề xuất",
-            "funding_desc": "Đề xuất đầu tiên của chúng tôi đã được tham khảo và tiến hành từ hôm nay, Ngày 6 tháng 12",
+            "funding_title": "Gitcoin Grant",
+            "funding_desc": "In an effort to kickstart our forever open-source marketplace, we are applying for funding through Gitcoin Grants",
             "introducing": "Giới thiệu",
             "introducing_title": "Hyperdrive NFT Exchange",
             "introducing_desc": "Xin chào tất cả - Tôi là DisctractionBoy ở đây để chia sẻ đề xuất từ cộng đồng L2DAO cho vòng 4 của OPIncubator và chính thức đăng ký cho đề xuất của LTIP-6. Thay mặt nhóm - việc thành lập Hyperdrive L2 NFT Exchange, tôi muốn gửi đề xuất này để xin tài trợ token $OP từ OPIncubator và mở cuộc thảo luận cho cộng đồng L2DAO để xem xét và thảo luận.",
