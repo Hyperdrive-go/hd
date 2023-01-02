@@ -285,9 +285,9 @@ export default function ProposalGitcoin() {
             Though the goal of Hyperdrive is to receive contributions from the
             community for its most core features, we are estimating our server
             costs to mimic those of Quix and Stratos. Therefore, at least in the
-            in the first half of the year, we are expecting to spend around
-            $1000 per month in server costs, $100 per month for Pináta (at least
-            in the beginning), and $100 per year in domain costs.
+            first half of the year, we are expecting to spend around $1000 per
+            month in server costs, $100 per month for Pináta (at least in the
+            beginning), and $100 per year in domain costs.
           </p>
           <p>
             In addition, it would be nice to offer small monetary incentives for
@@ -297,6 +297,11 @@ export default function ProposalGitcoin() {
             translation to a particular page could have a 5 $OP bounty attached
             to it while implementing customizable member rewards (Creator
             marketplace discounts) across the site might pay out 200 or 300 $OP.
+          </p>
+          <p>
+            We are trying to incentivize the spirit of pioneering without
+            locking the product down to a small group of people&apos;s thoughts
+            and feelings or trying to force profitability.
           </p>
         </div>
       </div>
