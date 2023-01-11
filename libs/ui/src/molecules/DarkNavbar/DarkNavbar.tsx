@@ -18,6 +18,8 @@ import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { optimism } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
+const labelWallet:any = <div className="flex"><WalletIcon className="block h-5 w-5 mr-1" aria-hidden="true" /><span>Connect Wallet</span> </div>;
+
 const { chains, provider } = configureChains(
   [optimism],
   [
@@ -131,7 +133,7 @@ const DarkNavbar = () => {
                         </div>
                         
                       <ConnectButton
-                        label={<div className="flex"><WalletIcon className="block h-5 w-5 mr-1" aria-hidden="true" /><span>Connect Wallet</span> </div>}
+                        label={labelWallet}
                         showBalance={false}
                       />
                     </div>
