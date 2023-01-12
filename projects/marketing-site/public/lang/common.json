@@ -153,9 +153,6 @@
       "introducing": "Introducing",
       "introducing_title": "Hyperdrive NFT Exchange",
       "introducing_desc": "With the shutting down of Quix (and thereby Stratos), thousands of NFT Creators will be left without a marketplace that they can call home. Hyperdrive is a completely open source NFT marketplace - the first of its kind. Its goal is to create a self-sustaining marketplace focused on the artists and engineers that bring life to their favorite chains.",
-      "summary": "Summary",
-      "summary_desc1": "",
-      "summary_desc2": "",
       "detail": "The Details",
       "background_title": "Background",
       "background_para1": "When we got together as a new team focused on one goal we started seeing more and more opportunities for a better user experience. We started with the idea that this should be a marketplace that is as every bit as diverse as it is separate, with commingled communities. Our team is comprised of experts in their fields and we have already challenged each other on core concepts but one thing we came to a consensus with early on was that this would be an L2-focused product because we firmly believe in EVM L2&apos;s as the sane alternative to high gas fees, and because of how engaged their communities are. Even through this bear market, the OptiChads and some other NFT projects have continued to show promising volume and rising floor prices while DeFi plummets.",
@@ -214,7 +211,19 @@
       "sustaining_desc": "The thing that ensures this remains a self-sustaining marketplace is that it continually meets the demands of the ever-changing ecosystem and that it is built by its users.",
       "sustaining_para1": "Though the goal of Hyperdrive is to receive contributions from the community for its most core features, we are estimating our server costs to mimic those of Quix and Stratos. Therefore, at least in the first half of the year, we are expecting to spend around $1000 per month in server costs, $100 per month for Pináta (at least in the beginning), and $100 per year in domain costs.",
       "sustaining_para2": "In addition, it would be nice to offer small monetary incentives for contributions. We could see attaching bounties to new features and bugfixes that the community desperately wants. The bounty amount could vary by issue difficulty and value added. Adding a language translation to a particular page could have a 5 $OP bounty attached to it while implementing customizable member rewards (Creator marketplace discounts) across the site might pay out 200 or 300 $OP.",
-      "sustaining_para3": "We are trying to incentivize the spirit of pioneering without locking the product down to a small group of people&apos;s thoughts and feelings or trying to force profitability."
+      "sustaining_para3": "We are trying to incentivize the spirit of pioneering without locking the product down to a small group of people&apos;s thoughts and feelings or trying to force profitability.",
+      "tech_specs_title1": "Tech Specs",
+      "tech_specs_title2": "Features",
+      "tech_specs_desc": "Much of the codebase will be copied from the Quix open-sourced code, at least in the beginning. However, we intend to expand on some features of the UI to get the best user experience.",
+      "tech_specs_para1": "First, we intend to cater to our users and have multi-lingual support, provided by native speakers from each region. Second, we will highlight new drops from trusted Creators, while remaining impartial towards one collection or another and give them equal time in the spotlight. Another thing we firmly believe in is to fine-tune experiences throughout the site - something that is often lacking in common web3 enabled sites. Hyperdrive is hyper-focused on speed. Using modern caching and pre-fectching capabilities, we will continue to improve the architecture on an as-needed basis so you never have to wait for simple interactions. Lastly, we want to make the user experience seemless between Optimism interactions and Arbitrum interactions.",
+      "tech_specs_title3": "Coming Soon To A Marketplace Near You",
+      "tech_specs_list_item1": "Lightning Fast",
+      "tech_specs_list_item2": "Multi-Lingual Support",
+      "tech_specs_list_item3": "Bulk Transactions",
+      "tech_specs_list_item4": "Customizable Creator Profiles",
+      "tech_specs_list_item5": "Modern and Responsive UI",
+      "tech_specs_list_item6": "Evolving Architecture",
+      "tech_specs_list_item7": "Layer 2 Chain Agnostic"
     }
   ],
   "team_page": [
