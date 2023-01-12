@@ -2,17 +2,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 import React from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import commonLang from "@/lang/common.json";
-import Link from 'next/link';
-import NavigationMain from '@/libs/interface/navigation';
+import Link from "next/link";
+import NavigationMain from "@/libs/interface/navigation";
 
 const navigation = {
   main: [
     { name: "vision", href: "/" },
     { name: "team", href: "/team" },
     { name: "funding", href: "/funding" },
-    { name: "token", href: "/token" },
   ],
   social: [
     {
@@ -44,9 +43,16 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <Link href={item.href} className="text-base dark:text-gray-400 dark:hover:text-gray-50 
-              text-gray-700 hover:text-gray-500">
-                {commonLang.menu.filter(j => j.locale === locale)[0][item.name as keyof NavigationMain]}
+              <Link
+                href={item.href}
+                className="text-base dark:text-gray-400 dark:hover:text-gray-50 
+              text-gray-700 hover:text-gray-500"
+              >
+                {
+                  commonLang.menu.filter((j) => j.locale === locale)[0][
+                    item.name as keyof NavigationMain
+                  ]
+                }
               </Link>
             </div>
           ))}

@@ -4,7 +4,7 @@ import FeaturesList from "./FeaturesList/FeaturesList";
 import Footer from "./Footer/Footer";
 import Layout from "./Layout/Layout";
 import MainHeroSection from "./MainHeroSection/MainHeroSection";
-import ProposalL2 from "./Proposals/ProposalL2";
+import ProposalGitcoin from "./Proposals/ProposalGitcoin";
 import RedSplash from "./Splashes/RedSplash";
 import SimpleNavbar from "./SimpleNavbar/SimpleNavbar";
 import CoreTeam from "./Team/CoreTeam";
@@ -17,7 +17,7 @@ export {
   Footer,
   Layout,
   MainHeroSection,
-  ProposalL2,
+  ProposalGitcoin,
   RedSplash,
   SimpleNavbar,
 };
