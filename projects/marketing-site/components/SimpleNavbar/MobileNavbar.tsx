@@ -6,7 +6,6 @@ import {
   ChevronRightIcon,
   CheckIcon,
   UserGroupIcon,
-  CubeIcon,
   PresentationChartBarIcon,
   BriefcaseIcon,
 } from "@heroicons/react/20/solid";
