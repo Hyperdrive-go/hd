@@ -1,31 +1,30 @@
-import Image from "next/image";
-
-import distractionChadBunny from "@/images/chadbit.jpg";
-import dicaso from "@/images/dicaso.jpg";
-import weston from "@/images/pfer-weston.png";
-import commonLang from "@/lang/common.json";
+import distractionChadBunny from '@/images/chadbit.jpg';
+import jason from '@/images/jason-factor-avatar.png';
+import weston from '@/images/pfer-weston.png';
+import commonLang from '@/lang/common.json';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const people = [
   {
-    name: "DistractionBoy",
-    role: "Engineering Lead",
+    name: 'DistractionBoy',
+    role: 'Engineering Lead',
     imageUrl: distractionChadBunny,
-    twitterUrl: "https://twitter.com/DistractionBoy_",
+    twitterUrl: 'https://twitter.com/DistractionBoy_',
     linkedinUrl: null,
   },
   {
-    name: "Dicaso",
-    role: "Creative Director",
-    imageUrl: dicaso,
-    twitterUrl: "https://twitter.com/Dicaso5",
-    linkedinUrl: null,
-  },
-  {
-    name: "Weston Nelson",
-    role: "Treasury Management",
+    name: 'Weston Nelson',
+    role: 'Treasury Management',
     imageUrl: weston,
-    twitterUrl: "https://twitter.com/westonnelson",
+    twitterUrl: 'https://twitter.com/westonnelson',
+    linkedinUrl: null,
+  },
+  {
+    name: 'Jason Factor',
+    role: 'anhfactor',
+    imageUrl: jason,
+    twitterUrl: '',
     linkedinUrl: null,
   },
 ];
@@ -39,10 +38,18 @@ export default function CoreTeam() {
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight dark:text-white text-black sm:text-4xl">
-              {commonLang.team_page.filter(j => j.locale === locale)[0]["team_title"]} 
+              {
+                commonLang.team_page.filter((j) => j.locale === locale)[0][
+                  'team_title'
+                ]
+              }
             </h2>
             <p className="text-xl dark:text-gray-300 text-black">
-              {commonLang.team_page.filter(j => j.locale === locale)[0]["team_desc"]} 
+              {
+                commonLang.team_page.filter((j) => j.locale === locale)[0][
+                  'team_desc'
+                ]
+              }
             </p>
           </div>
           <ul
@@ -56,7 +63,6 @@ export default function CoreTeam() {
               >
                 <div className="space-y-6 xl:space-y-10">
                   <div>
-                    {" "}
                     <Image
                       className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56"
                       src={person.imageUrl}
@@ -67,8 +73,12 @@ export default function CoreTeam() {
 
                   <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                     <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3 className="dark:text-white text-gray-900">{person.name}</h3>
-                      <p className="dark-text-indigo-400 text-indigo-600">{person.role}</p>
+                      <h3 className="dark:text-white text-gray-900">
+                        {person.name}
+                      </h3>
+                      <p className="dark-text-indigo-400 text-indigo-600">
+                        {person.role}
+                      </p>
                     </div>
 
                     <ul role="list" className="flex justify-center space-x-5">
