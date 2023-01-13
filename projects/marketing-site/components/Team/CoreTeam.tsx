@@ -1,6 +1,6 @@
 import distractionChadBunny from '@/images/chadbit.jpg';
+import dicaso from '@/images/dicaso.jpg';
 import jason from '@/images/jason-factor-avatar.png';
-import weston from '@/images/pfer-weston.png';
 import commonLang from '@/lang/common.json';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -14,10 +14,10 @@ const people = [
     linkedinUrl: null,
   },
   {
-    name: 'Weston Nelson',
-    role: 'Treasury Management',
-    imageUrl: weston,
-    twitterUrl: 'https://twitter.com/westonnelson',
+    name: 'Dicaso',
+    role: 'Creative Director',
+    imageUrl: dicaso,
+    twitterUrl: 'https://twitter.com/Dicaso5',
     linkedinUrl: null,
   },
   {

@@ -1,6 +1,5 @@
 import daru_vo from '@/images/daru_vo.jpg';
 import deren from '@/images/deren-avatar.png';
-import dicaso from '@/images/dicaso.jpg';
 import commonLang from '@/lang/common.json';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -10,11 +9,6 @@ const people = [
     name: 'Daru Vo',
     role: 'Designer',
     imageUrl: daru_vo,
-  },
-  {
-    name: 'Dicaso',
-    role: 'Creative Director',
-    imageUrl: dicaso,
   },
   {
     name: 'Deren Somsanith',
