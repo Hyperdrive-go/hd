@@ -6,11 +6,11 @@ Hyperdrive is an open source, Creator-focused, Layer 2 centric NFT marketplace b
 <a href="https://rushstack.io/"><img src="https://rushstack.io/images/rushstack.svg" width="300px" /></a>
 <p align="center"><a href="https://rushstack.io/">https://rushstack.io/</a></p>
 </td></tr></table>
+[![Zulip chat room](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://rushstack.zulipchat.com/) &nbsp; [![Build Status](https://github.com/microsoft/rushstack/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/microsoft/rushstack/actions/workflows/ci.yml?query=branch%3Amain)
 
-[![Zulip chat room](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://rushstack.zulipchat.com/) &nbsp; [![Build Status](https://github.com/microsoft/rushstack/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/microsoft/rushstack/actions/workflows/ci.yml?query=branch%3Amain) &nbsp;
+[![Next](https://github.com/jalbertsr/logo-badge-images/blob/master/img/rsz_nextjs.png?raw=true)](https://vercel.com/)
 
-The home for various projects maintained by the Rush Stack community, whose mission is to develop reusable tooling
-for large scale TypeScript monorepos.
+[![typescript](https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.jpg)](https://www.typescriptlang.org/)
 
 ## Getting Started As A Developer
 
@@ -26,27 +26,31 @@ Generally speaking, you should not need to run these commands often, because add
 
 ### rush update
 
-Remember to run rush update whenever a _package.json_ file has changed. In other words:
+Remember to run rush update whenever a **package.json** file has changed. In other words:
 
 - After pulling new changes from git (e.g. git pull)
 - After manually editing any project's package.json file in any way
 - After editing any common/config files that affect versions (e.g. pnpmfile.js, common-versions.json, etc.)
 
-The rush update operation may change some files under _common/config_. If so, you should commit those changes to Git and include them in your PR. When in doubt, run rush update -- if everything is already up to date, it won't take any time!
+The rush update operation may change some files under **common/config**. If so, you should commit those changes to Git and include them in your PR. When in doubt, run rush update -- if everything is already up to date, it won't take any time!
 
 What rush update does:
 
 1. Rush checks/applies various policies that sometimes update files under common/config.
-2. Rush compares all of your project package.json files against the repository's common shrinkwrap file to see if it's valid.
+2. Rush compares all of your project **package.json** files against the repository's common shrinkwrap file to see if it's valid.
 3. If it's outdated, the package manager updates the shrinkwrap file.
 4. Either way, the package manager installs all dependencies into the common/temp/node_modules folder.
-5. Finally, Rush constructs a local node_modules folder for each project, by making symlinks into common/temp/node_modules. (This is the same operation as rush link.)
+5. Finally, Rush constructs a local **node_modules** folder for each project, by making symlinks into common/temp/node_modules. (This is the same operation as rush link.)
 
 ### rush rebuild
 
 Once you've pulled the latest changes, it's time to compile everything. `rush rebuild` does a full, clean build of every project in the repository.
 
 If your toolchain supports incremental builds, you can also use `rush build` to build only the projects that have changed.
+
+### build commands
+
+Each folder inside of **/projects/** is its own separate buildable project with its own build commands, but we just so happen to be using NextJS for all our apps, so you can just run `npm run dev` and it will start that project's local build at http://localhost:3000
 
 ## Documentation Links
 
