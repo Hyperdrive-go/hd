@@ -91,6 +91,8 @@ export default function CoreTeam() {
                           <Link
                             href={person.twitterUrl}
                             className="text-blue-500 hover:text-gray-300"
+                            target="_blank"
+                            passHref
                           >
                             <span className="sr-only">Twitter</span>
                             <svg
@@ -109,6 +111,8 @@ export default function CoreTeam() {
                           <Link
                             href={person.linkedinUrl}
                             className="text-blue-500 hover:text-gray-300"
+                            target="_blank"
+                            passHref
                           >
                             <span className="sr-only">LinkedIn</span>
                             <svg
@@ -131,6 +135,8 @@ export default function CoreTeam() {
                           <Link
                             href={person.githubUrl}
                             className="text-blue-500 hover:text-gray-300"
+                            target="_blank"
+                            passHref
                           >
                             <span className="sr-only">GitHub</span>
                             <svg
