@@ -1,24 +1,30 @@
-import Image from "next/image";
-
-import distractionChadBunny from "@/images/chadbit.jpg";
-import dicaso from "@/images/dicaso.jpg";
-import weston from "@/images/pfer-weston.png";
-import commonLang from "@/lang/common.json";
-import { useRouter } from "next/router";
+import distractionChadBunny from '@/images/chadbit.jpg';
+import dicaso from '@/images/dicaso.jpg';
+import jason from '@/images/jason-factor-avatar.png';
+import commonLang from '@/lang/common.json';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const people = [
   {
-    name: "DistractionBoy",
-    role: "Engineering Lead",
+    name: 'DistractionBoy',
+    role: 'Engineering Lead',
     imageUrl: distractionChadBunny,
-    twitterUrl: "https://twitter.com/DistractionBoy_",
+    twitterUrl: 'https://twitter.com/DistractionBoy_',
     linkedinUrl: null,
   },
   {
-    name: "Dicaso",
-    role: "Creative Director",
+    name: 'Dicaso',
+    role: 'Creative Director',
     imageUrl: dicaso,
-    twitterUrl: "https://twitter.com/Dicaso5",
+    twitterUrl: 'https://twitter.com/Dicaso5',
+    linkedinUrl: null,
+  },
+  {
+    name: 'Jason Factor',
+    role: 'anhfactor',
+    imageUrl: jason,
+    twitterUrl: '',
     linkedinUrl: null,
   },
 ];
@@ -34,14 +40,14 @@ export default function CoreTeam() {
             <h2 className="text-3xl font-bold tracking-tight dark:text-white text-black sm:text-4xl">
               {
                 commonLang.team_page.filter((j) => j.locale === locale)[0][
-                  "team_title"
+                  'team_title'
                 ]
               }
             </h2>
             <p className="text-xl dark:text-gray-300 text-black">
               {
                 commonLang.team_page.filter((j) => j.locale === locale)[0][
-                  "team_desc"
+                  'team_desc'
                 ]
               }
             </p>
@@ -57,7 +63,6 @@ export default function CoreTeam() {
               >
                 <div className="space-y-6 xl:space-y-10">
                   <div>
-                    {" "}
                     <Image
                       className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56"
                       src={person.imageUrl}
