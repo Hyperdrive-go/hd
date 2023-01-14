@@ -13,7 +13,7 @@ const people = [
     imageUrl: distractionChadBunny,
     twitterUrl: "https://twitter.com/DistractionBoy_",
     linkedinUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/jason-pierce-designs",
   },
   {
     name: "Dicaso",
