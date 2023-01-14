@@ -63,7 +63,7 @@ export default function CoreTeam() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className="rounded-lg dark:bg-gray-800 bg-gray-300 py-10 px-6 text-center xl:px-10 xl:text-left"
+                className="rounded-lg dark:bg-gray-800 bg-gray-300 py-10 px-6 text-center xl:px-10 xl:text-left z-50"
               >
                 <div className="space-y-6 xl:space-y-10">
                   <div>
