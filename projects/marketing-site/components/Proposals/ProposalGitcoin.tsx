@@ -302,7 +302,7 @@ export default function ProposalGitcoin() {
           <p>
             {
               commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "sustaining_para2"
+                "sustaining_para3"
               ]
             }
           </p>
