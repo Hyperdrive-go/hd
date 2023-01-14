@@ -4,7 +4,7 @@ import distractionChadBunny from "@/images/chadbit.jpg";
 import dicaso from "@/images/dicaso.jpg";
 import weston from "@/images/pfer-weston.png";
 import commonLang from "@/lang/common.json";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const people = [
   {
@@ -21,13 +21,6 @@ const people = [
     twitterUrl: "https://twitter.com/Dicaso5",
     linkedinUrl: null,
   },
-  {
-    name: "Weston Nelson",
-    role: "Treasury Management",
-    imageUrl: weston,
-    twitterUrl: "https://twitter.com/westonnelson",
-    linkedinUrl: null,
-  },
 ];
 
 export default function CoreTeam() {
@@ -39,10 +32,18 @@ export default function CoreTeam() {
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight dark:text-white text-black sm:text-4xl">
-              {commonLang.team_page.filter(j => j.locale === locale)[0]["team_title"]} 
+              {
+                commonLang.team_page.filter((j) => j.locale === locale)[0][
+                  "team_title"
+                ]
+              }
             </h2>
             <p className="text-xl dark:text-gray-300 text-black">
-              {commonLang.team_page.filter(j => j.locale === locale)[0]["team_desc"]} 
+              {
+                commonLang.team_page.filter((j) => j.locale === locale)[0][
+                  "team_desc"
+                ]
+              }
             </p>
           </div>
           <ul
@@ -67,8 +68,12 @@ export default function CoreTeam() {
 
                   <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                     <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3 className="dark:text-white text-gray-900">{person.name}</h3>
-                      <p className="dark-text-indigo-400 text-indigo-600">{person.role}</p>
+                      <h3 className="dark:text-white text-gray-900">
+                        {person.name}
+                      </h3>
+                      <p className="dark-text-indigo-400 text-indigo-600">
+                        {person.role}
+                      </p>
                     </div>
 
                     <ul role="list" className="flex justify-center space-x-5">
