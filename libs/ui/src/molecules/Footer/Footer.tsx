@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
         {/* Second layer */}
         <div className="md:flex px-4 h-28 pt-10 md:pt-4 md:px-0">
-            <hr className="md:hidden pt-1 bg-slate-800 border-0"/>
+            <hr className="md:hidden pt-0.5 bg-slate-800 border-0"/>
             <div className="items-center">
               <div className="md:flex space-x-4">
                 <div className="rounded-md text-sm font-medium text-white py-2 pt-4 md:pt-0">
