@@ -90,7 +90,7 @@ export default function CoreTeam() {
                         <li>
                           <Link
                             href={person.twitterUrl}
-                            className="text-blue-500 hover:text-gray-300"
+                            className="text-blue-500 dark:hover:text-gray-300 hover:text-white"
                             target="_blank"
                             passHref
                           >
@@ -110,7 +110,7 @@ export default function CoreTeam() {
                         <li>
                           <Link
                             href={person.linkedinUrl}
-                            className="text-blue-500 hover:text-gray-300"
+                            className="text-blue-500 dark:hover:text-gray-300 hover:text-white"
                             target="_blank"
                             passHref
                           >
@@ -134,7 +134,7 @@ export default function CoreTeam() {
                         <li>
                           <Link
                             href={person.githubUrl}
-                            className="text-blue-500 hover:text-gray-300"
+                            className="text-blue-500 dark:hover:text-gray-300 hover:text-white"
                             target="_blank"
                             passHref
                           >
