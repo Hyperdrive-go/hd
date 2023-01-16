@@ -18,6 +18,9 @@ module.exports = {
         "3xl": "1815px",
         tall: { raw: "(min-height: 1200px)" },
       },
+      colors: {
+        'topnavBgDark': '#0B0B0B',
+      }
     },
   },
   variants: {
