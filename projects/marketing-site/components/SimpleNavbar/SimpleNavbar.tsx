@@ -13,7 +13,6 @@ import SwitchLanguage from "./SwitchLanguage";
 import ThemeToggler from "./ThemeToggler";
 import clsx from "clsx";
 import { useRouter } from "next/router";
-import commonLang from "@/lang/common.json";
 import Link from "next/link";
 import NavigationMain from "@/libs/interface/navigation";
 import MobileNavbar from "./MobileNavbar";
@@ -24,7 +23,7 @@ const navigation = [
   { name: "funding", href: "/funding" },
 ];
 
-const SimpleNavbar = () => {
+const SimpleNavbar = ({translate}:any) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { locale } = useRouter();
@@ -71,9 +70,7 @@ const SimpleNavbar = () => {
                 >
                   <span>
                     {
-                      commonLang.menu.filter((j) => j.locale === locale)[0][
-                        item.name as keyof NavigationMain
-                      ]
+                      translate("marketing:menu.0." + item.name as keyof NavigationMain )
                     }
                   </span>
                 </Link>
@@ -104,8 +101,8 @@ const SimpleNavbar = () => {
                   className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md dark:bg-slate-800
                 bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                 >
-                  <SwitchLanguage />
-                  <ThemeToggler />
+                  <SwitchLanguage translate={translate}/>
+                  <ThemeToggler translate={translate}/>
                   <hr className="h-0 my-2 border border-solid border-t-0 border-gray-700 opacity-25" />
                   <Menu.Item>
                     {({ active }) => (
@@ -121,11 +118,7 @@ const SimpleNavbar = () => {
                           className="h-6 w-6 mr-2"
                           aria-hidden="true"
                         />
-                        {
-                          commonLang.menu.filter((j) => j.locale === locale)[0][
-                            "sign_out"
-                          ]
-                        }
+                        {translate("marketing:menu.0.sign_out")}
                       </div>
                     )}
                   </Menu.Item>
@@ -162,7 +155,7 @@ const SimpleNavbar = () => {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <MobileNavbar />
+                <MobileNavbar translate={translate}/>
               </div>
             </div>
           </Dialog.Panel>

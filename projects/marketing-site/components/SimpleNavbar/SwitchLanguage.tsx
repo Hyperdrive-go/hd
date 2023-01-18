@@ -4,10 +4,10 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import commonLang from "@/lang/common.json";
 
-export default function SwitchLanguage() {
+export default function SwitchLanguage({translate}:any) {
   const { locale, locales, asPath } = useRouter();
+
   return (
     <Menu.Item>
       {({ active }) => (
@@ -18,7 +18,7 @@ export default function SwitchLanguage() {
         )}
       >
         <GlobeAltIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-        {commonLang.menu.filter(j => j.locale === locale)[0]["language"]} 
+        {translate("marketing:menu.0.language")}
         <Menu as="div" >
             <Menu.Button className="absolute right-0 mr-4 inline-flex">
               {locale?.substring(0,2)} <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
@@ -44,7 +44,7 @@ export default function SwitchLanguage() {
                         )}
                       >
                         <Link href={asPath} locale={l} className="inline-flex w-full">
-                          {commonLang.language.filter(j => j.locale === locale)[i]["name"]} 
+                          {translate("marketing:language."+i+".name")}
                           {l === locale ? <CheckIcon className="h-5 w-5 absolute right-0 mr-4" aria-hidden="true" /> : ''}
                         </Link>
                       </div>

@@ -3,7 +3,6 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 import React from "react";
 import { useRouter } from "next/router";
-import commonLang from "@/lang/common.json";
 import Link from "next/link";
 import NavigationMain from "@/libs/interface/navigation";
 
@@ -31,7 +30,7 @@ const navigation = {
   ],
 };
 
-export default function Footer() {
+export default function Footer({translate}:any) {
   const { locale } = useRouter();
 
   return (
@@ -49,9 +48,7 @@ export default function Footer() {
               text-gray-700 hover:text-gray-500"
               >
                 {
-                  commonLang.menu.filter((j) => j.locale === locale)[0][
-                    item.name as keyof NavigationMain
-                  ]
+                  translate("marketing:menu.0." + item.name as keyof NavigationMain )
                 }
               </Link>
             </div>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import commonLang from "@/lang/common.json";
 import { useRouter } from "next/router";
 
 {
@@ -11,7 +10,7 @@ import { useRouter } from "next/router";
 </Link> */
 }
 
-export default function ProposalGitcoin() {
+export default function ProposalGitcoin({translate}:any) {
   const { locale } = useRouter();
 
   return (
@@ -123,26 +122,14 @@ export default function ProposalGitcoin() {
         <div className="mx-auto max-w-prose text-lg">
           <h1>
             <span className="block text-center text-lg font-semibold text-red-600">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "introducing"
-                ]
-              }
+              {translate("marketing:funding_page.0.introducing")}
             </span>
             <span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "introducing_title"
-                ]
-              }
+              {translate("marketing:funding_page.0.introducing_title")}
             </span>
           </h1>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "introducing_desc"
-              ]
-            }
+            {translate("marketing:funding_page.0.introducing_desc")}
           </p>
         </div>
         <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
@@ -164,34 +151,18 @@ export default function ProposalGitcoin() {
             </figcaption>
           </figure> */}
           <h2>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "background_title"
-              ]
-            }
+            {translate("marketing:funding_page.0.background_title")}
           </h2>
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "background_para1"
-              ]
-            }
+            {translate("marketing:funding_page.0.background_para1")}
           </p>
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "background_para2"
-              ]
-            }
+            {translate("marketing:funding_page.0.background_para2")}
           </p>
 
           <blockquote>
             <p>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "background_blockquote"
-                ]
-              }
+              {translate("marketing:funding_page.0.background_blockquote")}
             </p>
           </blockquote>
         </div>
@@ -201,58 +172,30 @@ export default function ProposalGitcoin() {
         <div className="mx-auto max-w-prose text-lg">
           <h1>
             <span className="block text-center text-lg font-semibold text-red-600">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "vision_title1"
-                ]
-              }
+              {translate("marketing:funding_page.0.vision_title1")}
             </span>
             <span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "vision_title2"
-                ]
-              }
+              {translate("marketing:funding_page.0.vision_title2")}
             </span>
           </h1>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "vision_desc"
-              ]
-            }
+            {translate("marketing:funding_page.0.vision_desc")}
           </p>
         </div>
         <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "vision_para1"
-              ]
-            }
+            {translate("marketing:funding_page.0.vision_para1")}
           </p>
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "vision_para2"
-              ]
-            }
+            {translate("marketing:funding_page.0.vision_para2")}
           </p>
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "vision_para3"
-              ]
-            }
+            {translate("marketing:funding_page.0.vision_para3")}
           </p>
 
           <blockquote>
             <p>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "vision_blockquote"
-                ]
-              }
+              {translate("marketing:funding_page.0.vision_blockquote")}
             </p>
           </blockquote>
         </div>
@@ -262,49 +205,25 @@ export default function ProposalGitcoin() {
         <div className="mx-auto max-w-prose text-lg">
           <h1>
             <span className="block text-center text-lg font-semibold text-red-600">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "sustaining_title1"
-                ]
-              }
+              {translate("marketing:funding_page.0.sustaining_title1")}
             </span>
             <span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "sustaining_title2"
-                ]
-              }
+              {translate("marketing:funding_page.0.sustaining_title2")}
             </span>
           </h1>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "sustaining_desc"
-              ]
-            }
+            {translate("marketing:funding_page.0.sustaining_desc")}
           </p>
         </div>
         <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "sustaining_para1"
-              ]
-            }
+            {translate("marketing:funding_page.0.sustaining_para1")}
           </p>
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "sustaining_para2"
-              ]
-            }
+            {translate("marketing:funding_page.0.sustaining_para2")}
           </p>
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "sustaining_para3"
-              ]
-            }
+            {translate("marketing:funding_page.0.sustaining_para3")}
           </p>
         </div>
       </div>
@@ -313,93 +232,45 @@ export default function ProposalGitcoin() {
         <div className="mx-auto max-w-prose text-lg">
           <h1>
             <span className="block text-center text-lg font-semibold text-red-600">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_title1"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_title1")}
             </span>
             <span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_title2"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_title2")}
             </span>
           </h1>
           <p className="mt-8 text-xl leading-8 text-gray-500">
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "tech_specs_desc"
-              ]
-            }
+            {translate("marketing:funding_page.0.tech_specs_desc")}
           </p>
         </div>
         <div className="prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
           <p>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "tech_specs_para1"
-              ]
-            }
+            {translate("marketing:funding_page.0.tech_specs_para1")}
           </p>
 
           <h2>
-            {
-              commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                "tech_specs_title3"
-              ]
-            }
+            {translate("marketing:funding_page.0.tech_specs_title3")}
           </h2>
           <ul>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item1"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item1")}
             </li>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item2"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item2")}
             </li>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item3"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item3")}
             </li>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item4"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item4")}
             </li>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item5"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item5")}
             </li>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item6"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item6")}
             </li>
             <li>
-              {
-                commonLang.funding_page.filter((j) => j.locale === locale)[0][
-                  "tech_specs_list_item7"
-                ]
-              }
+              {translate("marketing:funding_page.0.tech_specs_list_item7")}
             </li>
           </ul>
         </div>

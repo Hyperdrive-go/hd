@@ -1,8 +1,6 @@
 import daru_vo from '@/images/daru_vo.jpg';
 import deren from '@/images/deren-avatar.png';
-import commonLang from '@/lang/common.json';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 const people = [
   {
@@ -17,8 +15,7 @@ const people = [
   },
 ];
 
-export default function Contributors() {
-  const { locale } = useRouter();
+export default function Contributors({translate}:any) {
 
   return (
     <div className="dark:bg-gray-900 bg-gray-50 rounded-lg">
@@ -26,18 +23,10 @@ export default function Contributors() {
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl dark:text-white text-black">
-              {
-                commonLang.team_page.filter((j) => j.locale === locale)[0][
-                  'contributor_title'
-                ]
-              }
+              {translate("marketing:team_page.0.contributor_title")}
             </h2>
             <p className="text-xl dark:text-gray-300 text-gray-800">
-              {
-                commonLang.team_page.filter((j) => j.locale === locale)[0][
-                  'contributor_desc'
-                ]
-              }
+              {translate("marketing:team_page.0.contributor_desc")}
             </p>
           </div>
           <ul

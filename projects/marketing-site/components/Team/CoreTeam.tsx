@@ -1,7 +1,6 @@
 import distractionChadBunny from "@/images/chadbit.jpg";
 import dicaso from "@/images/dicaso.jpg";
 import jason from "@/images/jason-factor-avatar.png";
-import commonLang from "@/lang/common.json";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -33,7 +32,7 @@ const people = [
   },
 ];
 
-export default function CoreTeam() {
+export default function CoreTeam({translate}:any) {
   const { locale } = useRouter();
 
   return (
@@ -42,18 +41,10 @@ export default function CoreTeam() {
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight dark:text-white text-black sm:text-4xl">
-              {
-                commonLang.team_page.filter((j) => j.locale === locale)[0][
-                  "team_title"
-                ]
-              }
+              {translate("marketing:team_page.0.team_title")}
             </h2>
             <p className="text-xl dark:text-gray-300 text-black">
-              {
-                commonLang.team_page.filter((j) => j.locale === locale)[0][
-                  "team_desc"
-                ]
-              }
+              {translate("marketing:team_page.0.team_desc")}
             </p>
           </div>
           <ul
