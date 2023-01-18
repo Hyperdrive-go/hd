@@ -15,6 +15,7 @@
   "scripts": {
     "clean": "rimraf dist .turbo",
     "build": "npm run clean",
+    "rebuild": "npm run clean",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --cache --cache-location ../../.cache/eslint/i18n.eslintcache",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --fix",
     "lint:types": "tsc --project ./tsconfig.json --noEmit"
