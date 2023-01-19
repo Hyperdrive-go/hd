@@ -88,6 +88,7 @@ Usage:
 - [Rush](https://rushjs.io/) - a build orchestrator for large scale TypeScript monorepos
 - [API Extractor](https://api-extractor.com/) - create .d.ts rollups and track your TypeScript API signatures
 - [API Documenter](https://api-extractor.com/pages/setup/generating_docs/) - use TSDoc comments to publish an API documentation website
+- [i18Next](https://github.com/i18next/next-i18next) - use to translate NextJs app
 
 ## Related Repos
 
