@@ -14,6 +14,7 @@ import React, { useState, Fragment } from "react";
 import { useRouter } from "next/router";
 import NavigationMain from "@/libs/interface/navigation";
 import Link from "next/link";
+import { useTranslation } from 'next-i18next'
 
 const navigation = [
   { name: "vision", href: "/", icon: BriefcaseIcon },
@@ -21,11 +22,12 @@ const navigation = [
   { name: "funding", href: "/funding", icon: PresentationChartBarIcon },
 ];
 
-export default function MobileNavbar({translate}:any) {
+export default function MobileNavbar() {
   const { theme, setTheme } = useTheme();
   const [enabled, setEnabled] = useState(theme === "dark" ? true : false);
 
   const { locale, locales, asPath } = useRouter();
+  const { t } = useTranslation();
 
   return (
     <div className="space-y-2 py-6 text-sm">
@@ -38,7 +40,7 @@ export default function MobileNavbar({translate}:any) {
           >
             <item.icon className="h-6 w-6 mr-2" />
             {
-              translate("marketing:menu.0." + item.name as keyof NavigationMain )
+              t("marketing:menu.0." + item.name as keyof NavigationMain )
             }
           </Link>
         </div>
@@ -47,7 +49,7 @@ export default function MobileNavbar({translate}:any) {
       {/* Switch Language */}
       <div className="py-2 dark:text-white text-black inline-flex font-semibold">
         <GlobeAltIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-        {translate("marketing:menu.0.language")}
+        {t("marketing:menu.0.language")}
         <Menu as="div">
           <Menu.Button className="absolute right-0 mr-4 inline-flex">
             {locale?.substring(0, 2)}{" "}
@@ -79,7 +81,7 @@ export default function MobileNavbar({translate}:any) {
                           onClick={close}
                         >
                           {
-                            translate("marketing:language."+i+".name")
+                            t("marketing:language."+i+".name")
                           }
                           {l === locale ? (
                             <CheckIcon
@@ -103,7 +105,7 @@ export default function MobileNavbar({translate}:any) {
       <div className="py-2 dark:text-gray-100 text-black font-semibold ">
         <div className="inline-flex">
           <MoonIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-          {translate("marketing:menu.0.dark_mode")}
+          {t("marketing:menu.0.dark_mode")}
           <div className="absolute right-0 mr-4 inline-flex">
             <Switch
               checked={enabled}
@@ -117,7 +119,7 @@ export default function MobileNavbar({translate}:any) {
             >
               <span
                 className={`${
-                  enabled ? "translate-x-6" : "translate-x-1"
+                  enabled ? "t-x-6" : "t-x-1"
                 } inline-block h-4 w-4 transform rounded-full bg-white `}
               />
             </Switch>
@@ -133,7 +135,7 @@ export default function MobileNavbar({translate}:any) {
           className="h-6 w-6 mr-2"
           aria-hidden="true"
         />
-        {translate("marketing:menu.0.sign_out")}
+        {t("marketing:menu.0.sign_out")}
       </Link>
     </div>
   );

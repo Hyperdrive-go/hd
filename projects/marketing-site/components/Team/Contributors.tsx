@@ -1,6 +1,7 @@
 import daru_vo from '@/images/daru_vo.jpg';
 import deren from '@/images/deren-avatar.png';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next'
 
 const people = [
   {
@@ -15,7 +16,8 @@ const people = [
   },
 ];
 
-export default function Contributors({translate}:any) {
+export default function Contributors() {
+  const { t } = useTranslation()
 
   return (
     <div className="dark:bg-gray-900 bg-gray-50 rounded-lg">
@@ -23,10 +25,10 @@ export default function Contributors({translate}:any) {
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl dark:text-white text-black">
-              {translate("marketing:team_page.0.contributor_title")}
+              {t("marketing:team_page.0.contributor_title")}
             </h2>
             <p className="text-xl dark:text-gray-300 text-gray-800">
-              {translate("marketing:team_page.0.contributor_desc")}
+              {t("marketing:team_page.0.contributor_desc")}
             </p>
           </div>
           <ul

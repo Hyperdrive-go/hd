@@ -24,7 +24,7 @@ const LandingPage = () => {
     <Layout>
       <div className="isolate dark:bg-black bg-white">
         <BlueSplash />
-        <SimpleNavbar translate={t}/>
+        <SimpleNavbar/>
         <RedSplash height="sm" />
       </div>
       <main>
@@ -41,10 +41,10 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-          <ProposalGitcoin translate={t}/>
+          <ProposalGitcoin/>
         </div>
       </main>
-      <Footer translate={t}/>
+      <Footer/>
     </Layout>
   );
 };
