@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { Home } from "@/components/Home/Home";
+import { Detail } from "@/components/Detail/Detail";
 
 import Molecules from "@libs/ui/src/molecules";
 
-export default function HomePage() {
+export default function DetailPage() {
   return (
     <>
       <Head>
@@ -14,7 +14,7 @@ export default function HomePage() {
       </Head>
       <Molecules.DarkNavbar />
       
-        <Home/>
+        <Detail/>
       <Molecules.Footer />
     </>
   );
