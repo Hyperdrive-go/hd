@@ -164,7 +164,6 @@ export const TopCollections = () => {
           </thead>
           <tbody className="mx-auto bg-gray-900 divide-y divide-blue-900">
             {collections.map((collection) => (
-              <>
                 <tr key={collection.id}>
                   <td className="py-6 px-4 text-start">{collection.id}</td>
                   <td className="py-6 px-2 text-start">
@@ -227,7 +226,6 @@ export const TopCollections = () => {
                   <td className="py-6 px-2 text-start">{collection.sales24h}</td>
                   <td className="py-6 px-2 text-start">{collection.totalAssets}</td>
                 </tr>
-              </>
               ))}
           </tbody>
         </table>

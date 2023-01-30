@@ -67,7 +67,7 @@ const features = [
 
 export const MoreFromCollection = () => {
     return (
-      <div className=" bg-black pb-12">
+      <div className="bg-black pb-12">
         <h2 className="mx-auto max-w-7xl text-white py-8 text-left text-3xl font-bold">
           More from OptiChads
         </h2>

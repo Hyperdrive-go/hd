@@ -94,7 +94,7 @@ export const FeaturedCreators = () => {
                         />
                       <p className="text-sm text-white inline">{feature.volume}</p>
                     </div>
-                    <div className="grid grid-cols-2 mb-2">
+                    <div className="grid grid-cols-2 mb-2 gap-2">
                       <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-2">
                         <p className="text-sm text-gray-500 mb-1 ml-1">Items</p>
                         <p className="text-sm text-white ml-1">{feature.items}</p>
@@ -103,8 +103,6 @@ export const FeaturedCreators = () => {
                         <p className="text-sm text-gray-500 mb-1 ml-1">Owners</p>
                         <p className="text-sm text-white ml-1">{feature.owners}</p>
                       </div>
-                    </div>
-                    <div className="grid grid-cols-2">
                       <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-2">
                         <p className="text-sm text-gray-500 mb-1 ml-1">Listed</p>
                         <p className="text-sm text-white ml-1">{feature.listed}</p>

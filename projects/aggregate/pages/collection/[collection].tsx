@@ -1,9 +1,8 @@
 import Head from "next/head";
-import { Detail } from "@/components/Detail/Detail";
-
+import { Collection } from "@/components/Collection/Collection";
 import Molecules from "@libs/ui/src/molecules";
 
-export default function DetailPage() {
+export default function CollectionPage() {
   return (
     <>
       <Head>
@@ -13,7 +12,7 @@ export default function DetailPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Molecules.DarkNavbar />
-        <Detail/>
+        <Collection/>
       <Molecules.Footer />
     </>
   );
