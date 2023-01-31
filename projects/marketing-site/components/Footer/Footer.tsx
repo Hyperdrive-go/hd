@@ -2,10 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 import React from "react";
-import { useRouter } from "next/router";
-import commonLang from "@/lang/common.json";
 import Link from "next/link";
 import NavigationMain from "@/libs/interface/navigation";
+import { useTranslation } from 'next-i18next'
 
 const navigation = {
   main: [
@@ -32,7 +31,7 @@ const navigation = {
 };
 
 export default function Footer() {
-  const { locale } = useRouter();
+  const { t } = useTranslation('marketing')
 
   return (
     <footer className="dark:bg-gray-900 bg-gray-200">
@@ -49,9 +48,7 @@ export default function Footer() {
               text-gray-700 hover:text-gray-500"
               >
                 {
-                  commonLang.menu.filter((j) => j.locale === locale)[0][
-                    item.name as keyof NavigationMain
-                  ]
+                  t("marketing:menu.0." + item.name as keyof NavigationMain )
                 }
               </Link>
             </div>

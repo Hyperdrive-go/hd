@@ -51,6 +51,35 @@ If your toolchain supports incremental builds, you can also use `rush build` to 
 
 Each folder inside of **/projects/** is its own separate buildable project with its own build commands, but we just so happen to be using NextJS for all our apps, so you can just run `npm run dev` and it will start that project's local build at http://localhost:3000
 
+### make commands
+Another easy way is use make command 
+```bash
+Management commands for Hyperdrive:
+Usage:
+    make                       Prepares and setup up project with default settings
+    make help                  Show this menu
+    make dev-aggregate         Start development aggregate site
+    make dev-creators          Start development creators site
+    make dev-marketing         Start development marketing site
+
+    🏢 Org                     Hyperdrive (github.com/Hyperdrive-go/hd)
+```
+
+## 🤔 What's inside?
+
+### → Structure
+
+```bash
+├── projects (nextjs) 
+│   ├── aggregate       
+│   ├── creators        
+│   └── marketing-site  
+├── libs
+│   ├── i18n          (locales for multi-language support)
+│   └── ui            (webpack, share stub components)
+└── common (rush config)
+```
+
 ## Documentation Links
 
 - [What is Rush Stack?](https://rushstack.io/) - learn about the mission behind these projects
@@ -59,6 +88,7 @@ Each folder inside of **/projects/** is its own separate buildable project with 
 - [Rush](https://rushjs.io/) - a build orchestrator for large scale TypeScript monorepos
 - [API Extractor](https://api-extractor.com/) - create .d.ts rollups and track your TypeScript API signatures
 - [API Documenter](https://api-extractor.com/pages/setup/generating_docs/) - use TSDoc comments to publish an API documentation website
+- [i18Next](https://github.com/i18next/next-i18next) - use to translate NextJs app
 
 ## Related Repos
 

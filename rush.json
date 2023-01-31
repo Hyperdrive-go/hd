@@ -425,6 +425,12 @@
       "projectFolder": "libs/ui",
       "reviewCategory": "production",
       "tags": ["frontend-team"]
+    },
+    {
+      "packageName": "@libs/i18n",
+      "projectFolder": "libs/i18n",
+      "reviewCategory": "production",
+      "tags": ["frontend-team"]
     }
     //
     // {
