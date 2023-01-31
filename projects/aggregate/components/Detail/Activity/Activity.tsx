@@ -64,7 +64,7 @@ export const Activity = () => {
           </thead>
           <tbody className="mx-auto bg-gray-900">
             {activities.map((activity) => (
-                <tr>
+                <tr key={activity.from}>
                     <td className="py-4 px-4 text-start">{activity.event}</td>
                     <td className="py-4 px-4 text-start">{activity.price}</td>
                     <td className="py-4 px-4 text-start">{activity.from}</td>

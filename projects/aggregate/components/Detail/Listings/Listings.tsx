@@ -44,7 +44,7 @@ export const Listings = () => {
           </thead>
           <tbody className="mx-auto bg-gray-900">
             {listings.map((listing) => (
-                <tr>
+                <tr key={listing.from}>
                     <td className="py-4 px-2 text-start">{listing.price}</td>
                     <td className="py-4 px-2 text-start">{listing.usdPrice}</td>
                     <td className="py-4 px-2 text-start">{listing.expiration}</td>
