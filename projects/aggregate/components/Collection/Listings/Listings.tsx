@@ -86,7 +86,7 @@ export const Listings = () => {
                 <li className="mr-2 w-full">
                     <div className="inline-flex p-8 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500 group" aria-current="page">
                       Collection
-                      <button type="button" className="text-black bg-purple-400 rounded-md text-sm p-1 text-left ml-2 inline">4</button>
+                      <button type="button" className="text-black bg-purple-00 rounded-md text-sm p-1 text-left ml-2 inline">4</button>
                     </div>
                 </li>
                 <li className="mr-2 w-full">
