@@ -1,0 +1,115 @@
+{
+  "test":"aaa",
+  "language": [
+    {
+      "name": "English"
+    },
+    {
+      "name": "Vietnamese"
+    }
+  ],
+  "menu": [
+    {
+      "vision": "Vision",
+      "team": "Team",
+      "funding": "Funding",
+      "token": "Token",
+      "language": "Language",
+      "dark_mode": "Dark Mode",
+      "sign_out": "Sign out"
+    }
+  ],
+  "vision_page": [
+    {
+      "announce": "Announcing our first round of funding.",
+      "readmore": "Read more",
+      "top_title": "A MarketPlace for Creators Built by the Community",
+      "top_desc": "Built from the ground up with Creators in mind, Hyperdrive will deliver a unique experience that changes with the products and pioneers of the ecosystem.",
+      "proposal": "Proposal",
+      "team": "Team",
+      "feature_title": "All-in-one platform",
+      "feature_desc": "We've reinvisioned a marketplace for the people from the ground up and found that these were the things on the top of your list."
+    }
+  ],
+  "vision_feature": [
+    {
+      "name": "Hyperspeed",
+      "description": "By using the latest tech and positioning our servers around the world, Hyperdive will load fast and run smooth."
+    },
+    {
+      "name": "Creator Focused",
+      "description": "Customizable NFT Creator pages that bring a storefront to life and combine collections and off-chain activity."
+    },
+    {
+      "name": "Bot Protection",
+      "description": "We want your marketplace to grow organically and help ensure we are always open for business."
+    },
+    {
+      "name": "Expert Team",
+      "description": "We come from well known projects on L2's and have official backgrounds in engineering and finance."
+    },
+    {
+      "name": "Open Source",
+      "description": "Transparency is so key to crypto and you deserve to know when you buy with us, what you see is what you get."
+    },
+    {
+      "name": "Community Maintained",
+      "description": "Want to add a feature or integrate an api to help improve the Marketplace? Hack around and find out, fren!"
+    },
+    {
+      "name": "Multilingual",
+      "description": "You should be able to experience the Marketplace as you would in your own town."
+    },
+    {
+      "name": "Social Media",
+      "description": "With a focus on decentralized social media solutions, we intend to increase retention on Creator pages."
+    }
+  ],
+  "funding_page": [
+    {
+      "funding_title": "Gitcoin Grant",
+      "funding_desc": "In an effort to kickstart our forever open-source marketplace, we are applying for funding through Gitcoin Grants",
+      "introducing": "Introducing",
+      "introducing_title": "Hyperdrive NFT Exchange",
+      "introducing_desc": "With the shutting down of Quix (and thereby Stratos), thousands of NFT Creators will be left without a marketplace that they can call home. Hyperdrive is a completely open source NFT marketplace - the first of its kind. Its goal is to create a self-sustaining marketplace focused on the artists and engineers that bring life to their favorite chains.",
+      "detail": "The Details",
+      "background_title": "Background",
+      "background_para1": "When we got together as a new team focused on one goal we started seeing more and more opportunities for a better user experience. We started with the idea that this should be a marketplace that is as every bit as diverse as it is separate, with commingled communities. Our team is comprised of experts in their fields and we have already challenged each other on core concepts but one thing we came to a consensus with early on was that this would be an L2-focused product because we firmly believe in EVM L2's as the sane alternative to high gas fees, and because of how engaged their communities are. Even through this bear market, the OptiChads and some other NFT projects have continued to show promising volume and rising floor prices while DeFi plummets.",
+      "background_para2": "Dicaso, the creator of OptiChads, the first NFT project on Optimism to receive funding through OP Governance, is leading the Product Team on Hyperdrive to ensure economic incentives are aligned with its user base. DistractionBoy is a co-founder of Optimistic Bunnies and OptiChads, and is a Senior Software Engineer (specializing in User Interfaces) with over 8 years in enterprise-level applications and 13 years of experience as a freelancer for hire in photography, design for print, and web design.",
+      "background_blockquote": "Even through this bear market, the OptiChads and some other NFT projects have continued to show promising volume and rising floor prices while DeFi plummets.",
+      "vision_title1": "Vision",
+      "vision_title2": "A Creator-Focused Approach",
+      "vision_desc": "Imagine you are walking to work in a village in India and you turn right around a street corner, like you always do, and you start walking down a local street vendor marketplace alley. One vendor has the sweetest dates and the sunniest disposition. Every time she sees you glance in her direction she smiles and the light from her yellow canopy reflects delicately off of her golden brown skin. Another one, much further down the alley, keeps shoving her fish in the face of passers-by yelling, 'FRESH FISH'. There's a vendor with who makes fresh breakfast sandwiches every morning and is always fun to talk to but his booth has no frills and the sandwiches are his only product. One vendor in particular always catches your eye because they sell tickets to that thing you really want to do one day when you have enough time and you keep checking the prices to see if they ever drop to a reasonable price. You could have passed the whole marketplace and taken the next turn. But you enjoy the activity and real people literally reaching their hands out for your conversation, and your business.",
+      "vision_para1": "The go-to L2 marketplace should replicate that feeling. Some NFT Creators like to draw images by hand, and release new collections slowly, others like to generate with AI and pump them out one after another. They all have little, different niches within the NFT space.",
+      "vision_para2": "Some Creators have multiple collections of a similar theme, while other Creators have a unique look for every collection. Over time these creators can have quests, giveaways, upcoming promotional material for new collections, and more. What Quix and OpenSea did very well was load collections of NFT's quickly, and they have their own ways of highlighting different collections, but we think the focus should be on the Creators and their own little shop on the street rather than just the individual collections. Also, we want them to be able to customize their 'shop' as they see fit. It should look how they want it to look, and be their primary marketing tool. By the time we are done, they should not need to launch a secondary website of their own to highlight their strengths.",
+      "vision_para3": "Finally, each Creator should be able to offer promotions and customized discounts or incentives as they see fit without interference from the marketplace. Imagine being able to take advantage of increased discounts based on how many pieces of a single collection you own, or how many pieces of multiple collections you own from the same vendor.",
+      "vision_blockquote": "...each Creator should be able to offer promotions and customized discounts or incentives as they see fit without interference from the marketplace",
+      "sustaining_title1": "Self Sustaining",
+      "sustaining_title2": "We Don't Care About Filling Our Pockets",
+      "sustaining_desc": "The thing that ensures this remains a self-sustaining marketplace is that it continually meets the demands of the ever-changing ecosystem and that it is built by its users.",
+      "sustaining_para1": "Though the goal of Hyperdrive is to receive contributions from the community for its most core features, we are estimating our server costs to mimic those of Quix and Stratos. Therefore, at least in the first half of the year, we are expecting to spend around $1000 per month in server costs, $100 per month for Pináta (at least in the beginning), and $100 per year in domain costs.",
+      "sustaining_para2": "In addition, it would be nice to offer small monetary incentives for contributions. We could see attaching bounties to new features and bugfixes that the community desperately wants. The bounty amount could vary by issue difficulty and value added. Adding a language translation to a particular page could have a 5 $OP bounty attached to it while implementing customizable member rewards (Creator marketplace discounts) across the site might pay out 200 or 300 $OP.",
+      "sustaining_para3": "We are trying to incentivize the spirit of pioneering without locking the product down to a small group of people's thoughts and feelings or trying to force profitability.",
+      "tech_specs_title1": "Tech Specs",
+      "tech_specs_title2": "Features",
+      "tech_specs_desc": "Much of the codebase will be copied from the Quix open-sourced code, at least in the beginning. However, we intend to expand on some features of the UI to get the best user experience.",
+      "tech_specs_para1": "First, we intend to cater to our users and have multi-lingual support, provided by native speakers from each region. Second, we will highlight new drops from trusted Creators, while remaining impartial towards one collection or another and give them equal time in the spotlight. Another thing we firmly believe in is to fine-tune experiences throughout the site - something that is often lacking in common web3 enabled sites. Hyperdrive is hyper-focused on speed. Using modern caching and pre-fectching capabilities, we will continue to improve the architecture on an as-needed basis so you never have to wait for simple interactions. Lastly, we want to make the user experience seemless between Optimism interactions and Arbitrum interactions.",
+      "tech_specs_title3": "Coming Soon To A Marketplace Near You",
+      "tech_specs_list_item1": "Lightning Fast",
+      "tech_specs_list_item2": "Multi-Lingual Support",
+      "tech_specs_list_item3": "Bulk Transactions",
+      "tech_specs_list_item4": "Customizable Creator Profiles",
+      "tech_specs_list_item5": "Modern and Responsive UI",
+      "tech_specs_list_item6": "Evolving Architecture",
+      "tech_specs_list_item7": "Layer 2 Chain Agnostic"
+    }
+  ],
+  "team_page": [
+    {
+      "team_title": "Meet our team",
+      "team_desc": "L2 Maxis coming together to provide a unique perspective on trading JPEGs.",
+      "contributor_title": "Contributors",
+      "contributor_desc": "Hyperdrive is a result of the hard work from the community."
+    }
+  ]
+}

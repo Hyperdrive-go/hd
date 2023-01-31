@@ -8,11 +8,21 @@ import {
 import hyperdriveHeroAlt from "@/images/logo-very-large.png";
 import Image from "next/image";
 
-const LandingPage = () => {
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({locale}:any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['marketing']))
+    }
+  }
+}
+
+const LandingPage = () => {  
   return (
     <Layout>
       <main>
-        <MainHeroSection />
+        <MainHeroSection/>
         <div className="max-w-7xl mx-auto relative h-[230px] sm:h-[320px] md:h-[420px] lg:h-[600px] xl:h-[920px] my-4 md:my-12 xl:my-24">
           <Image
             src={hyperdriveHeroAlt}
@@ -22,8 +32,8 @@ const LandingPage = () => {
             fill
           />
         </div>
-        <FeaturesList />
-        <Footer />
+        <FeaturesList/>
+        <Footer/>
       </main>
     </Layout>
   );

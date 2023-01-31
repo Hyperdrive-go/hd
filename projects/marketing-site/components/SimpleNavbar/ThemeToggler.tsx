@@ -3,16 +3,14 @@ import { MoonIcon } from '@heroicons/react/20/solid'
 import clsx from "clsx";
 import { useTheme } from 'next-themes';
 import React, { useState } from 'react';
-import commonLang from "@/lang/common.json";
-import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next'
 
 export default function ThemeToggler() {
   const { theme, setTheme } = useTheme();
   const [enabled, setEnabled] = useState(theme === 'dark' ? true : false)
 
-  const { locale } = useRouter();
-  
-  
+  const { t } = useTranslation();
+    
   return (
       <Menu.Item>
         {({ active }) => (
@@ -23,7 +21,7 @@ export default function ThemeToggler() {
             )}
           >
             <MoonIcon className="h-6 w-6 mr-2" aria-hidden="true" />
-            {commonLang.menu.filter(j => j.locale === locale)[0]["dark_mode"]} 
+            {t("marketing:menu.0.dark_mode")}
             <div className="absolute right-0 mr-4 inline-flex">
               <Switch
                 checked={enabled}
