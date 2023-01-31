@@ -63,7 +63,7 @@ export const Description = () => {
             </div>
 
             <div className="col-start-5 col-end-7">
-              <div className="grid grid-cols-3 gap-2 bg-white p-2 -mt-8 rounded-lg">
+              <div className="grid grid-cols-3 gap-2 bg-white p-3 -mt-8 rounded-lg">
                 <div className="bg-gray-200 rounded-lg p-2">
                   <p className="text-sm text-gray-500 mb-1 ml-1">items</p>
                   <p className="text-sm text-black ml-1 font-bold">{detail.items}</p>

@@ -50,8 +50,7 @@ export const Listings = () => {
                     <td className="py-4 px-2 text-start">{listing.expiration}</td>
                     <td className="py-4 px-2 text-start">{listing.from}</td>
                     <td className="py-4 px-2 text-start">
-                    <button type="button" className="text-red-600 border-2 border-red-600 
-                    rounded-lg  p-1 px-6 text-left">Buy</button>
+                      <button type="button" className="text-red-600 border-2 border-red-600 rounded-lg  p-1 px-6 text-left">Buy</button>
                     </td>
                 </tr>
             ))}

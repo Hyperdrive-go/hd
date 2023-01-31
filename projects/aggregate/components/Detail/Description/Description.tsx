@@ -71,7 +71,7 @@ export const Description = () => {
                 <FontAwesomeIcon icon={faDiscord} className="ml-4 text-white w-5 h-5 inline mt-2" />
               </div>
             </div>
-            <div className="p-2 mt-8 h-full rounded-xl" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+            <div className="p-2 mt-8 rounded-xl" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
               <div className="p-3 text-white">
                 <h2 className="font-bold text-2xl">{detail.name}</h2>
                 <div className="flex py-2">
