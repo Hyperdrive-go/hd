@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Home } from "@/components/Home/Home";
+import { Profile } from "@/components/Profile/Profile";
 
 import Molecules from "@libs/ui/src/molecules";
 
@@ -13,8 +13,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Molecules.DarkNavbar />
-      
-        <Home/>
+        <Profile/>
       <Molecules.Footer />
     </>
   );
