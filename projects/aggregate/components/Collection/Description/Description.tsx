@@ -29,7 +29,7 @@ export const Description = () => {
             zIndex: -1,
             position: "absolute"
           }}
-          className="w-full h-full"
+          className="w-full lg:h-full h-96"
           >
           <Image 
               src={bannerBackground}
@@ -39,50 +39,52 @@ export const Description = () => {
             />
           </div>
         </div>
-        <div className="mx-auto max-w-7xl p-12">  
+        <div className="mx-auto max-w-3xl lg:max-w-7xl p-6 lg:p-12">  
           <Image 
               src={banner5}
               alt="background"
               className="-z-10"/>
-          <div className="mx-auto max-w-6xl relative px-6 grid grid-cols-6 gap-4">
-            <Image 
-                src={optichad}
-                alt=""
-                className="w-40 h-40 rounded-lg -mt-8"/>
+          <div className="mx-auto max-w-6xl relative px-6 grid grid-cols-1 lg:grid-cols-6 gap-4">
+            <div className="col-start-4 col-end-12 lg:col-start-1 lg:col-end-2">
+              <Image 
+                  src={optichad}
+                  alt=""
+                  className="w-20 h-20 lg:w-40 lg:h-40 rounded-lg -mt-12"/>
+            </div>
 
-            <div className="col-start-2 col-end-5 mt-2">
+            <div className="col-start-2 col-end-5 lg:mt-2">
               <div className="flex py-2">
                 <div className="flex-auto">
-                  <h2 className="text-white text-2xl font-bold inline">{detail.name}</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{detail.name}</h2>
                   <FontAwesomeIcon icon={faCircleCheck} className="ml-2 text-white font-bold w-4 h-4 inline mb-2" />
                 </div>
                 <FontAwesomeIcon icon={faTwitter} className="ml-4 text-white w-5 h-5 inline mt-2" />
                 <FontAwesomeIcon icon={faDiscord} className="ml-4 text-white w-5 h-5 inline mt-2" />
               </div>
-              <p className="text-white font-light">{detail.description}</p>
+              <p className="text-sm lg:text-md text-white font-light">{detail.description}</p>
             </div>
 
-            <div className="col-start-5 col-end-7">
-              <div className="grid grid-cols-3 gap-2 bg-white p-3 -mt-8 rounded-lg">
+            <div className="col-start-5 col-end-12 mt-8 lg:mt-0">
+              <div className="grid grid-cols-3 gap-2 bg-white p-2 lg:p-3 -mt-8 rounded-lg">
                 <div className="bg-gray-200 rounded-lg p-2">
-                  <p className="text-sm text-gray-500 mb-1 ml-1">items</p>
-                  <p className="text-sm text-black ml-1 font-bold">{detail.items}</p>
+                  <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">items</p>
+                  <p className="text-xs lg:text-sm text-black ml-1 font-bold">{detail.items}</p>
                 </div>
                 <div className="bg-gray-200 rounded-lg p-2">
-                  <p className="text-sm text-gray-500 mb-1 ml-1">owners</p>
-                  <p className="text-sm text-black ml-1 font-bold">{detail.owners}</p>
+                  <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">owners</p>
+                  <p className="text-xs lg:text-sm text-black ml-1 font-bold">{detail.owners}</p>
                 </div>
                 <div className="bg-gray-200 rounded-lg p-2">
-                  <p className="text-sm text-gray-500 mb-1 ml-1">listed</p>
-                  <p className="text-sm text-black ml-1 font-bold">{detail.listed}</p>
+                  <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">listed</p>
+                  <p className="text-xs lg:text-sm text-black ml-1 font-bold">{detail.listed}</p>
                 </div>
                 <div className="bg-gray-200 rounded-lg p-2">
-                  <p className="text-sm text-gray-500 mb-1 ml-1">sales</p>
-                  <p className="text-sm text-black ml-1 font-bold">{detail.sales}</p>
+                  <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">sales</p>
+                  <p className="text-xs lg:text-sm text-black ml-1 font-bold">{detail.sales}</p>
                 </div>
                 <div className="bg-gray-200 rounded-lg p-2">
-                  <p className="text-sm text-gray-500 mb-1 ml-1">floor price</p>
-                  <p className="text-sm text-black ml-1 font-bold">
+                  <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">floor price</p>
+                  <p className="text-xs lg:text-sm text-black ml-1 font-bold">
                     <Image
                       className="rounded-lg h-4 w-4 mr-1 inline"
                       src={ethereumLogo}
@@ -90,11 +92,11 @@ export const Description = () => {
                       priority
                     />
                       {detail.floor}
-                    </p>
+                  </p>
                 </div>
                 <div className="bg-gray-200 rounded-lg p-2">
-                  <p className="text-sm text-gray-500 mb-1 ml-1">volume</p>
-                  <p className="text-sm text-black ml-1 font-bold">
+                  <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">volume</p>
+                  <p className="text-xs lg:text-sm text-black ml-1 font-bold">
                   <Image
                     className="rounded-lg h-4 w-4 mr-1 inline"
                     src={ethereumLogo}

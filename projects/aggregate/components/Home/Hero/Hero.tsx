@@ -95,7 +95,7 @@ export const Hero = () => {
             zIndex: -1,
             position: "absolute"
           }}
-          className="w-full h-full"
+          className="w-full h-96 lg:h-full"
           >
           <Image 
               src={bannerBackground}
@@ -105,10 +105,10 @@ export const Hero = () => {
             />
           </div>
         </div>
-        <h1 className="text-white p-8 text-center text-4xl font-bold">
+        <h1 className="text-white p-6 lg:p-8 text-center text-2xl md:text-3xl lg:text-4xl font-bold">
           Explore, collect, and sell NFTs
         </h1>          
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
           <Carousel
             swipeable={false}
             draggable={false}
@@ -120,7 +120,7 @@ export const Hero = () => {
             customTransition="transform 500ms ease-in-out"
             transitionDuration={500}
             containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
+            removeArrowOnDeviceType={["mobile"]}
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
             renderButtonGroupOutside={true}
@@ -133,18 +133,18 @@ export const Hero = () => {
                 className="p-2"
               >
                 <div className="rounded-lg bg-white p-3">
-                    <div className="grid grid-cols-2">
-                      <div className="flex">
+                    <div className="grid grid-cols-3">
+                      <div className="flex col-start-1 col-end-3">
                         <Image
-                          className="rounded-lg h-6 w-6"
+                          className="rounded-lg h-5 w-5 lg:h-6 lg:w-6"
                           src={slider.imageUrl}
                           alt=""
                           priority
                         />
-                          <p className="text-md font-light tracking-tight text-gray-900 px-2">{slider.name}</p>
-                          <FontAwesomeIcon icon={faCircleCheck} className="text-red-600 w-4 h-4 mt-1" />
+                          <p className="text-sm lg:text-md font-light tracking-tight text-gray-900 px-2">{slider.name}</p>
+                          <FontAwesomeIcon icon={faCircleCheck} className="text-red-600 w-3 h-3 lg:w-4 lg:h-4 mt-1" />
                       </div>
-                      <p className="text-md font-light tracking-tight text-red-600 text-right">{slider.code}</p>
+                      <p className="text-sm lg:text-md font-light tracking-tight text-red-600 text-right">{slider.code}</p>
                     </div>
                     <div className="py-3">
                       <Image
@@ -155,8 +155,8 @@ export const Hero = () => {
                       />
                     </div>
                     <div className="grid grid-cols-2">
-                      <p className="text-md font-light tracking-tight text-gray-900">{slider.timeLeft}</p>
-                      <p className="text-md font-bold tracking-tight text-red-600 text-right">{slider.price}</p>
+                      <p className="text-sm lg:text-md font-light tracking-tight text-gray-900">{slider.timeLeft}</p>
+                      <p className="text-sm lg:text-md font-bold tracking-tight text-red-600 text-right">{slider.price}</p>
                     </div>
                   </div>
               </div>

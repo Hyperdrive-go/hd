@@ -143,30 +143,30 @@ const collections = [
 
 export const TopCollections = () => {
     return (
-      <div className="mt-20 bg-black pb-12">
+      <div className="lg:mt-20 bg-black pb-12">
         <h2 className="text-white p-8 text-center text-3xl font-bold">
             Top NFT Collections by Trading Volume
         </h2>
         <table className="mx-auto table-auto text-white mb-10">
           <thead className="bg-gray-800 text-gray-400">
             <tr>
-              <th className="py-6 px-4">#</th>
-              <th className="py-6 pr-4 text-start">Collection</th>
-              <th className="py-6 pr-8">24h Volume</th>
-              <th className="py-6 pr-8">Floor price</th>
-              <th className="py-6 pr-8">24h Owners</th>
-              <th className="py-6 pr-8">24h Floor</th>
-              <th className="py-6 pr-8">Owners</th>
-              <th className="py-6 pr-8">Market Cap</th>
-              <th className="py-6 pr-8">24h Sales</th>
-              <th className="py-6 pr-8">Total Assets</th>
+              <th className="py-6 px-4 text-sm lg:text-md">#</th>
+              <th className="py-6 pr-4 text-start text-sm lg:text-md">Collection</th>
+              <th className="py-6 pr-8 text-sm lg:text-md">24h Volume</th>
+              <th className="py-6 pr-8 text-sm lg:text-md">Floor price</th>
+              <th className="py-6 pr-8 hidden lg:inline-block text-sm lg:text-md">24h Owners</th>
+              <th className="py-6 pr-8 hidden lg:inline-block text-sm lg:text-md">24h Floor</th>
+              <th className="py-6 pr-8 text-sm lg:text-md">Owners</th>
+              <th className="py-6 pr-8 hidden lg:inline-block text-sm lg:text-md">Market Cap</th>
+              <th className="py-6 pr-8 hidden lg:inline-block text-sm lg:text-md">24h Sales</th>
+              <th className="py-6 pr-8 hidden lg:inline-block text-sm lg:text-md">Total Assets</th>
             </tr>
           </thead>
           <tbody className="mx-auto bg-gray-900 divide-y divide-blue-900">
             {collections.map((collection) => (
                 <tr key={collection.id}>
-                  <td className="py-6 px-4 text-start">{collection.id}</td>
-                  <td className="py-6 px-2 text-start">
+                  <td className="py-6 px-4 text-start text-sm lg:text-md">{collection.id}</td>
+                  <td className="py-6 px-2 text-start text-sm lg:text-md">
                     <div className="flex">
                       <Image
                         className="rounded-lg h-12 w-12 mr-2"
@@ -177,7 +177,7 @@ export const TopCollections = () => {
                       <p className="mt-3">{collection.name}</p>
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start">
+                  <td className="py-6 px-2 text-start text-sm lg:text-md">
                     <div className="flex">
                         <Image
                           className="rounded-lg h-4 w-4 mr-1 mt-1"
@@ -188,7 +188,7 @@ export const TopCollections = () => {
                         {collection.volume24h}
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start">
+                  <td className="py-6 px-2 text-start text-sm lg:text-md">
                     <div className="flex">
                         <Image
                           className="rounded-lg h-4 w-4 mr-1 mt-1"
@@ -199,21 +199,21 @@ export const TopCollections = () => {
                         {collection.floorPrice}
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start text-red-500">
-                    <div className="flex">
+                  <td className="py-6 px-2 text-start text-red-500 hidden lg:inline-block text-sm lg:text-md">
+                    <div className="flex mt-4">
                       <FontAwesomeIcon icon={faChevronDown} className="w-3 h-3 mr-2 mt-1" />
                       {collection.owners24h}
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start text-green-500">
-                    <div className="flex">
+                  <td className="py-6 px-2 text-start text-green-500 hidden lg:inline-block text-sm lg:text-md">
+                    <div className="flex mt-4">
                       <FontAwesomeIcon icon={faChevronUp} className="w-3 h-3 mr-2 mt-1" />
                       {collection.floor24h}
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start">{collection.owners}</td>
-                  <td className="py-6 px-2 text-start">
-                    <div className="flex">
+                  <td className="py-6 px-2 text-start text-sm lg:text-md">{collection.owners}</td>
+                  <td className="py-6 px-2 text-start hidden lg:inline-block text-sm lg:text-md">
+                    <div className="flex mt-4">
                         <Image
                           className="rounded-lg h-4 w-4 mr-1 mt-1"
                           src={ethereumLogo}
@@ -223,14 +223,14 @@ export const TopCollections = () => {
                         {collection.marketCap}
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start">{collection.sales24h}</td>
-                  <td className="py-6 px-2 text-start">{collection.totalAssets}</td>
+                  <td className="py-6 px-8 text-right hidden lg:inline-block text-sm lg:text-md mt-4">{collection.sales24h}</td>
+                  <td className="py-6 px-16 text-right hidden lg:inline-block text-sm lg:text-md mt-4">{collection.totalAssets}</td>
                 </tr>
               ))}
           </tbody>
         </table>
-        <div className="text-center">
-          <button type="button" className="text-white bg-red-700 px-8 py-2.5 rounded-lg">
+        <div className="text-center mt-6 lg:mt-12">
+          <button type="button" className="text-white bg-red-700 px-6 py-2 lg:px-8 lg:py-2.5 rounded-lg">
             View More
           </button>
         </div>
