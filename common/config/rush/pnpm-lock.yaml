@@ -137,6 +137,7 @@ importers:
       postcss: ^8.4.19
       react: 18.2.0
       react-dom: 18.2.0
+      react-multi-carousel: ^2.8.2
       tailwindcss: ~3.2.4
       typescript: 4.9.4
     dependencies:
@@ -147,7 +148,7 @@ importers:
       '@libs/ui': link:../../libs/ui
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
-      '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+      '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
       '@types/node': 18.11.12
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
@@ -159,12 +160,12 @@ importers:
       next-transpile-modules: 10.0.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      react-multi-carousel: 2.8.2
       tailwindcss: 3.2.4
       typescript: 4.9.4
     devDependencies:
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
-      tailwindcss: 3.2.4
 
   ../../projects/creators:
     specifiers:
@@ -10759,16 +10760,6 @@ packages:
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  /next-themes/0.2.1_f26ff3bd08f1cd28b0f73422c76f5ffd:
-    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
-    peerDependencies:
-      next: '*'
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      next: 13.0.6_react-dom@18.2.0+react@18.2.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
   /next-i18next/13.0.3_6d8180712f251a73140ec7dd5b2571d1:
     resolution: {integrity: sha512-7AA8J6WbkxRBtSf1+97LSAE7btxWZHsBIJEJ3FuTSBgYtpRiO5NGjcb8XbNAlz6yGU0TtS+yZE+/Wu83KhIT1Q==}
     engines: {node: '>=14'}
@@ -10787,6 +10778,18 @@ packages:
       next: 13.0.5_react-dom@18.2.0+react@18.2.0
       react: 18.2.0
       react-i18next: 12.1.4_4014ad8e693a5f450dc0e3a80ea8e612
+    dev: false
+
+  /next-themes/0.2.1_f26ff3bd08f1cd28b0f73422c76f5ffd:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 13.0.6_react-dom@18.2.0+react@18.2.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /next-themes/0.2.1_fa2952ccddfcc2bb62e259556553b777:
@@ -12529,6 +12532,11 @@ packages:
 
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+
+  /react-multi-carousel/2.8.2:
+    resolution: {integrity: sha512-M9Y7DfAp8bA/r6yexttU6RLA7uyppje4c0ELRuCHZWswH+u7nr0uVP6qHNPjc4XGOEY1MYFOb5nBg7JvoKutuQ==}
+    engines: {node: '>=8'}
+    dev: false
 
   /react-refresh/0.11.0:
     resolution: {integrity: sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==}

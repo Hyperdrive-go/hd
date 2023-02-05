@@ -1,11 +1,30 @@
 import Image from "next/image";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import featureBanner from "@/images/feature_banner.png"
 import banner1 from "@/images/sample/banner1.png"
 import ethereumLogo from "@/images/ethereum-eth-logo.png"
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
 const features = [
   {
@@ -57,14 +76,28 @@ export const FeaturedCreators = () => {
           Featured Projects
         </h2>
         <div className="mx-auto max-w-7xl">
-          <ul
-            role="list"
-            className="grid grid-cols-4 gap-4"
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="transform 500ms ease-in-out"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
+            renderButtonGroupOutside={true}
+            centerMode={true}
+            rewindWithAnimation={true}
           >
             {features.map((feature) => (
-              <li
+              <div
                 key={feature.name}
-                className="rounded-lg"
+                className="rounded-lg p-3"
               >
                 <div className="max-w-sm bg-gray-900 rounded-lg pb-4">
                     <Image 
@@ -119,9 +152,9 @@ export const FeaturedCreators = () => {
                       </div>
                     </div>
                 </div>
-              </li>
+              </div>
             ))}
-          </ul>
+          </Carousel>
         </div>
         <div className="text-center mt-12">
           <button type="button" className="text-white bg-red-700 px-8 py-2.5 rounded-lg">
