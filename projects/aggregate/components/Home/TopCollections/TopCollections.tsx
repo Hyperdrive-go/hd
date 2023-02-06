@@ -143,8 +143,8 @@ const collections = [
 
 export const TopCollections = () => {
     return (
-      <div className="lg:mt-20 bg-black pb-12">
-        <h2 className="text-white p-8 text-center text-3xl font-bold">
+      <div className="mt-10 lg:mt-20 bg-black pb-12">
+        <h2 className="text-white p-8 text-center text-xl md:text-2xl lg:text-3xl font-bold">
             Top NFT Collections by Trading Volume
         </h2>
         <table className="mx-auto table-auto text-white mb-10">

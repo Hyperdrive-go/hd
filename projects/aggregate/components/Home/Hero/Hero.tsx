@@ -14,7 +14,7 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3 // optional, default to 1.
+    slidesToSlide: 3
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -89,7 +89,7 @@ const sliders = [
 
 export const Hero = () => {
     return (
-      <div className="">
+      <div className="shadow-2xl">
         <div className="mx-auto">
           <div style={{
             zIndex: -1,
@@ -108,9 +108,9 @@ export const Hero = () => {
         <h1 className="text-white p-6 lg:p-8 text-center text-2xl md:text-3xl lg:text-4xl font-bold">
           Explore, collect, and sell NFTs
         </h1>          
-        <div className="mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
+        <div className="mx-auto max-w-sm md:max-w-2xl lg:max-w-7xl">
           <Carousel
-            swipeable={false}
+            swipeable={true}
             draggable={false}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
@@ -136,15 +136,15 @@ export const Hero = () => {
                     <div className="grid grid-cols-3">
                       <div className="flex col-start-1 col-end-3">
                         <Image
-                          className="rounded-lg h-5 w-5 lg:h-6 lg:w-6"
+                          className="rounded-lg w-4 h-4 md:h-5 md:w-5 lg:h-6 lg:w-6"
                           src={slider.imageUrl}
                           alt=""
                           priority
                         />
-                          <p className="text-sm lg:text-md font-light tracking-tight text-gray-900 px-2">{slider.name}</p>
-                          <FontAwesomeIcon icon={faCircleCheck} className="text-red-600 w-3 h-3 lg:w-4 lg:h-4 mt-1" />
+                          <p className="text-xs md:text-sm lg:text-md font-light tracking-tight text-gray-900 px-1 md:px-2">{slider.name}</p>
+                          <FontAwesomeIcon icon={faCircleCheck} className="text-red-600 w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 mt-1" />
                       </div>
-                      <p className="text-sm lg:text-md font-light tracking-tight text-red-600 text-right">{slider.code}</p>
+                      <p className="text-xs md:text-sm lg:text-md font-light tracking-tight text-red-600 text-right">{slider.code}</p>
                     </div>
                     <div className="py-3">
                       <Image
@@ -155,8 +155,8 @@ export const Hero = () => {
                       />
                     </div>
                     <div className="grid grid-cols-2">
-                      <p className="text-sm lg:text-md font-light tracking-tight text-gray-900">{slider.timeLeft}</p>
-                      <p className="text-sm lg:text-md font-bold tracking-tight text-red-600 text-right">{slider.price}</p>
+                      <p className="text-xs md:text-sm lg:text-md font-light tracking-tight text-gray-900">{slider.timeLeft}</p>
+                      <p className="text-xs md:text-sm lg:text-md font-bold tracking-tight text-red-600 text-right">{slider.price}</p>
                     </div>
                   </div>
               </div>
