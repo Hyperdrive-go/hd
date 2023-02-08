@@ -31,8 +31,8 @@ export const Body = () => {
             </ul>
         </div>
 
-        <div className="mx-auto max-w-2xl lg:max-w-7xl">
-            <div className="grid grid-cols-2 gap-12 text-sm lg:text-md ">
+        <div className="mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-sm lg:text-md ">
                 <div className="mt-4">
                     <div className="py-6">
                         <p className="text-white font-bold text-lg inline py-10">Username</p>

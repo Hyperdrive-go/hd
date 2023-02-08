@@ -11,7 +11,7 @@ export const Detail = () => {
       <>
         <Description/>
         <div className="bg-black py-10">
-          <div className="grid grid-cols-2 gap-4 mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
             <Properties/>
             <PriceHistory/>
             <Offers/>

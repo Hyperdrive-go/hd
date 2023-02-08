@@ -12,7 +12,7 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3 // optional, default to 1.
+    slidesToSlide: 3
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -75,9 +75,9 @@ export const FeaturedCreators = () => {
         <h2 className="text-white p-6 lg:p-8 text-center tex-xl md:text-2xl lg:text-3xl font-bold">
           Featured Projects
         </h2>
-        <div className="mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
+        <div className="mx-auto max-w-sm md:max-w-2xl lg:max-w-7xl">
           <Carousel
-            swipeable={false}
+            swipeable={true}
             draggable={false}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
@@ -108,14 +108,14 @@ export const FeaturedCreators = () => {
                     <Image 
                       src={feature.imageUrl}
                       alt="background"
-                      className="mx-auto p-1 bg-white w-24 h-24 lg:w-32 lg:h-32 rounded-lg -mt-16 z-50 relative"
+                      className="mx-auto p-1 bg-white w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-lg -mt-8 md:-mt-16 z-50 relative"
                     />
                     <div className="p-5 text-center">
                        <div className="flex-auto mb-2">
-                        <h5 className="mr-2 md:text-sm lg:text-lg font-bold text-white inline">{feature.name}</h5>
+                        <h5 className="mr-2 text-sm lg:text-lg font-bold text-white inline">{feature.name}</h5>
                         <FontAwesomeIcon icon={faCircleCheck} className="text-red-600 w-4 h-4 inline" />
                        </div>
-                       <p className="text-xs lg:text-sm text-white">{feature.description}</p>
+                       <p className="sm:font-light text-xs lg:text-sm text-white">{feature.description}</p>
                     </div>
                     <div className="mx-auto w-11/12 bg-gray-800 rounded-lg p-2 mb-2">
                       <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">Volume</p>
@@ -128,19 +128,19 @@ export const FeaturedCreators = () => {
                       <p className="text-xs lg:text-sm text-white inline">{feature.volume}</p>
                     </div>
                     <div className="grid grid-cols-2 mb-2 gap-2">
-                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-2">
+                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-1 md:p-2">
                         <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">Items</p>
                         <p className="text-xs lg:text-sm text-white ml-1">{feature.items}</p>
                       </div>
-                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-2">
+                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-1 md:p-2">
                         <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">Owners</p>
                         <p className="text-xs lg:text-sm text-white ml-1">{feature.owners}</p>
                       </div>
-                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-2">
+                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-1 md:p-2">
                         <p className="text-xs lg:text-sm text-gray-500 mb-2 ml-1">Listed</p>
                         <p className="text-xs lg:text-sm text-white ml-1">{feature.listed}</p>
                       </div>
-                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-2">
+                      <div className="mx-auto w-10/12 bg-gray-800 rounded-lg p-1 md:p-2">
                         <p className="text-xs lg:text-sm text-gray-500 mb-1 ml-1">Floor</p>
                         <Image
                             className="rounded-lg h-4 w-4 mr-1 inline"

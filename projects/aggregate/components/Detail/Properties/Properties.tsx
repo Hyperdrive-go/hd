@@ -26,7 +26,7 @@ export const Properties = () => {
             </div>
             <FontAwesomeIcon icon={faAngleDown} className="text-white w-5 h-5 lg:w-6 lg:h-6 inline mb-2 text-end" />
         </div>
-        <div className="grid grid-cols-3 gap-2 mt-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-2">
             <div className="bg-gray-800 rounded-lg p-2">
                 <p className="text-xs lg:text-sm text-red-600 font-bold py-2 ml-1">Body</p>
                 <p className="text-xs lg:text-sm text-white ml-1">{detail.bodyDesc}</p>

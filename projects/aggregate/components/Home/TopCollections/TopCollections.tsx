@@ -147,9 +147,9 @@ export const TopCollections = () => {
         <h2 className="text-white p-8 text-center text-xl md:text-2xl lg:text-3xl font-bold">
             Top NFT Collections by Trading Volume
         </h2>
-        <table className="mx-auto table-auto text-white mb-10">
+        <table className="mx-auto table-fixed md:table-auto text-white mb-10">
           <thead className="bg-gray-800 text-gray-400">
-            <tr>
+            <tr className="hidden md:contents">
               <th className="py-6 px-4 text-sm lg:text-md">#</th>
               <th className="py-6 pr-4 text-start text-sm lg:text-md">Collection</th>
               <th className="py-6 pr-8 text-sm lg:text-md">24h Volume</th>
@@ -166,7 +166,7 @@ export const TopCollections = () => {
             {collections.map((collection) => (
                 <tr key={collection.id}>
                   <td className="py-6 px-4 text-start text-sm lg:text-md">{collection.id}</td>
-                  <td className="py-6 px-2 text-start text-sm lg:text-md">
+                  <td className="py-6 px-2 text-start text-sm lg:text-md ">
                     <div className="flex">
                       <Image
                         className="rounded-lg h-12 w-12 mr-2"
@@ -177,7 +177,7 @@ export const TopCollections = () => {
                       <p className="mt-3">{collection.name}</p>
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start text-sm lg:text-md">
+                  <td className="py-6 px-2 text-start text-sm lg:text-md break-words	">
                     <div className="flex">
                         <Image
                           className="rounded-lg h-4 w-4 mr-1 mt-1"
@@ -188,7 +188,7 @@ export const TopCollections = () => {
                         {collection.volume24h}
                     </div>
                   </td>
-                  <td className="py-6 px-2 text-start text-sm lg:text-md">
+                  <td className="py-6 px-2 text-start text-sm lg:text-md ">
                     <div className="flex">
                         <Image
                           className="rounded-lg h-4 w-4 mr-1 mt-1"
