@@ -71,3 +71,4 @@ common/autoinstallers/*/.npmrc
 
 # Heft temporary files
 .heft
+/.env.local
