@@ -14,9 +14,9 @@ export const Filter = () => {
 
             {/* Sort */}
             <div className="mb-4">
-                <p className="text-white font-bold text-lg inline">Sort</p>
+                <p className="text-white font-bold text-sm lg:text-lg inline">Sort</p>
                 <div className="py-2">
-                    <select className="bg-gray-800 text-white text-sm rounded-lg w-full">
+                    <select className="bg-gray-800 text-white text-xs lg:text-sm rounded-lg w-full">
                         <option selected value="LH">Price: Low to High</option>
                         <option value="HU">Price: High to Low</option>
                     </select>
@@ -27,16 +27,16 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex pb-4">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Availability</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Availability</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleDown} className="text-white w-4 h-4 inline mt-1" />
                 </div>
 
                 <div className="py-2 space-y-3">
-                    <button type="button" className="text-red-600 border border-red-600 rounded-lg p-2 w-full pl-5 text-left">All</button>
-                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-5 text-left">Buy Now</button>
-                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-5 text-left">Has Offers</button>
-                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-5 text-left">Not Listed</button>
+                    <button type="button" className="text-red-600 border border-red-600 rounded-lg p-2 w-full pl-5 text-left text-sm lg:text-md">All</button>
+                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-5 text-left text-sm lg:text-md">Buy Now</button>
+                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-5 text-left text-sm lg:text-md">Has Offers</button>
+                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-5 text-left text-sm lg:text-md">Not Listed</button>
                 </div>
             </div>
 
@@ -44,14 +44,14 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex pb-4">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Price</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Price</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleDown} className="text-white w-4 h-4 inline mt-1" />
                 </div>
 
                 <div className="py-2 grid grid-cols-2 gap-4">
-                    <button type="button" className="text-gray-400 bg-gray-800 rounded-lg p-2 w-full pl-5 text-left">Min</button>
-                    <button type="button" className="text-gray-400 bg-gray-800 rounded-lg p-2 w-full pl-5 text-left">Max</button>
+                    <button type="button" className="text-gray-400 bg-gray-800 rounded-lg p-2 w-full pl-3 lg:pl-5 text-left text-sm lg:text-md">Min</button>
+                    <button type="button" className="text-gray-400 bg-gray-800 rounded-lg p-2 w-full pl-3 lg:pl-5 text-left text-sm lg:text-md">Max</button>
                 </div>
             </div>
 
@@ -59,14 +59,14 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex pb-4">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Currency</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Currency</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleDown} className="text-white w-4 h-4 inline mt-1" />
                 </div>
 
                 <div className="py-2 space-y-3">
-                    <button type="button" className="text-red-600 border border-red-600 rounded-lg p-2 w-full pl-5 text-left">All</button>
-                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-4 text-left">
+                    <button type="button" className="text-red-600 border border-red-600 rounded-lg p-2 w-full pl-5 text-left text-sm lg:text-md">All</button>
+                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-4 text-left text-sm lg:text-md">
                         <Image
                             className="rounded-lg h-4 w-4 mr-1 inline"
                             src={ethereumLogo}
@@ -75,7 +75,7 @@ export const Filter = () => {
                             />
                         ETH
                     </button>
-                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-4 text-left">
+                    <button type="button" className="text-white border border-gray-600 rounded-lg p-2 w-full pl-4 text-left text-sm lg:text-md">
                         <Image
                             className="rounded-lg h-4 w-4 mr-2 inline"
                             src={opLogo}
@@ -91,7 +91,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">1 of 1</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">1 of 1</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -99,7 +99,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Background</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Background</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -107,7 +107,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Body</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Body</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -115,7 +115,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Earrings</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Earrings</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -123,7 +123,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Eyes</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Eyes</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -131,7 +131,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Head</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Head</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -139,7 +139,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Mouth</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Mouth</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -147,7 +147,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Outfit</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Outfit</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>
@@ -155,7 +155,7 @@ export const Filter = () => {
             <div className="py-4">
                 <div className="flex">
                     <div className="flex-auto">
-                        <p className="text-white font-bold text-lg inline">Attribute Filter Method</p>
+                        <p className="text-white font-bold text-sm lg:text-lg inline">Attribute Filter Method</p>
                     </div>
                     <FontAwesomeIcon icon={faAngleRight} className="text-white w-4 h-4 inline mt-1" />
                 </div>

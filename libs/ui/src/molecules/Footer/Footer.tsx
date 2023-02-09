@@ -26,14 +26,14 @@ const Footer = () => {
       </div>
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:divide-y divide-slate-800 divide-solid md:ml-12 md:mr-12 lg:ml-16">
         {/* First layer */}
-        <div className="relative md:flex h-44 pt-12">
+        <div className="relative md:flex h-36 lg:h-44 pt-6 lg:pt-12">
             <div className="items-center px-4 md:px-2 lg:px-0">
               <Image
                 className="hidden h-8 w-auto lg:block"
                 src={logo}
                 alt="Your Company"
               />
-              <div className="md:pt-4">
+              <div className="md:pt-2">
                 <div className="rounded-md text-sm font-medium text-white">
                     Discover, collect, and sell digital items on the
                 </div>
@@ -73,7 +73,7 @@ const Footer = () => {
             <hr className="md:hidden pt-0.5 bg-slate-800 border-0"/>
             <div className="items-center">
               <div className="md:flex space-x-4">
-                <div className="rounded-md text-sm font-medium text-white py-2 pt-4 md:pt-0">
+                <div className="rounded-md text-sm font-medium text-white py-2 lg:pt-4">
                   @2022 HyperDrive. All rights reserved.
                 </div>
               </div>
