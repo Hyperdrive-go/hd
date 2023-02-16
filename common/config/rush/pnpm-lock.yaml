@@ -45,6 +45,7 @@ importers:
       clsx: ~1.2.1
       css-loader: ^6.7.3
       css-modules-typescript-loader: ^4.0.1
+      downshift: ^7.2.0
       encoding: ^0.1.13
       ethers: ^5.7.2
       file-loader: ^6.2.0
@@ -75,6 +76,7 @@ importers:
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
       clsx: 1.2.1
+      downshift: 7.2.0_react@18.2.0
       encoding: 0.1.13
       ethers: 5.7.2
       lokijs: 1.5.12
@@ -6014,6 +6016,10 @@ packages:
       safe-buffer: 5.1.2
       vary: 1.1.2
 
+  /compute-scroll-into-view/2.0.4:
+    resolution: {integrity: sha512-y/ZA3BGnxoM/QHHQ2Uy49CLtnWPbt4tTPpEEZiEmmiWBFKjej7nEyH8Ryz54jH0MLXflUYA3Er2zUxPSJu5R+g==}
+    dev: false
+
   /concat-map/0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
@@ -6722,6 +6728,19 @@ packages:
   /dotenv/10.0.0:
     resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  /downshift/7.2.0_react@18.2.0:
+    resolution: {integrity: sha512-dEn1Sshe7iTelUhmdbmiJhtIiwIBxBV8p15PuvEBh0qZcHXZnEt0geuCIIkCL4+ooaKRuLE0Wc+Fz9SwWuBIyg==}
+    peerDependencies:
+      react: '>=16.12.0'
+    dependencies:
+      '@babel/runtime': 7.20.7
+      compute-scroll-into-view: 2.0.4
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-is: 17.0.2
+      tslib: 2.4.1
     dev: false
 
   /duplexer/0.1.2:
