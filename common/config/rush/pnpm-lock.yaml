@@ -123,7 +123,6 @@ importers:
       '@fortawesome/free-solid-svg-icons': ^6.2.1
       '@fortawesome/react-fontawesome': ^0.2.0
       '@libs/ui': workspace:*
-      '@stitches/react': ^1.2.8
       '@tailwindcss/aspect-ratio': ~0.4.2
       '@tailwindcss/forms': ~0.5.3
       '@tailwindcss/typography': ~0.5.8
@@ -149,7 +148,6 @@ importers:
       '@fortawesome/free-solid-svg-icons': 6.2.1
       '@fortawesome/react-fontawesome': 0.2.0_cebe167be39b298c5652d6c4a48e22a6
       '@libs/ui': link:../../libs/ui
-      '@stitches/react': 1.2.8_react@18.2.0
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
       '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
@@ -3674,14 +3672,6 @@ packages:
       '@stablelib/keyagreement': 1.0.1
       '@stablelib/random': 1.0.2
       '@stablelib/wipe': 1.0.1
-    dev: false
-
-  /@stitches/react/1.2.8_react@18.2.0:
-    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
-    peerDependencies:
-      react: '>= 16.3.0'
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /@surma/rollup-plugin-off-main-thread/2.2.3:
