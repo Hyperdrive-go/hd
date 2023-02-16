@@ -5,7 +5,7 @@ import { MagnifyingGlassIcon, ShoppingCartIcon } from "@heroicons/react/20/solid
 import { Bars3Icon, BellIcon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Image from "next/image";
-import Search from "../Search/Search";
+import SearchCollections from "../SearchCollections/SearchCollections";
 
 const logo = require('../../assets/images/logo.png');
 
@@ -82,14 +82,15 @@ const DarkNavbar = () => {
                     </div>
                   </div>
                   <div className="flex flex-1 justify-center px-2 lg:ml-6 hidden md:block">
-                    <Search/>
+                    <SearchCollections
+                    isMobile={false}
+                    />
                   </div>
                   <div className="flex md:hidden space-x-3">
                     {/* Mobile menu button */}
-                    <MagnifyingGlassIcon
-                        className="h-6 w-6 text-gray-300 "
-                        aria-hidden="true"
-                      />
+                    <SearchCollections
+                      isMobile={true}
+                    />
                     <ShoppingCartIcon
                         className="h-6 w-6 text-gray-300"
                         aria-hidden="true"
