@@ -1,11 +1,10 @@
-import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon, ShoppingCartIcon } from "@heroicons/react/20/solid";
 
 import { Bars3Icon, BellIcon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
-import clsx from "clsx";
 import Image from "next/image";
 import SearchCollections from "../SearchCollections/SearchCollections";
+import CartMenu from "../CartMenu/CartMenu";
 
 const logo = require('../../assets/images/logo.png');
 
@@ -86,7 +85,7 @@ const DarkNavbar = () => {
                     isMobile={false}
                     />
                   </div>
-                  <div className="flex md:hidden space-x-3">
+                  <div className="md:hidden ml-auto flex gap-x-3">
                     {/* Mobile menu button */}
                     <SearchCollections
                       isMobile={true}
@@ -96,6 +95,7 @@ const DarkNavbar = () => {
                         aria-hidden="true"
                       />
                     
+                    <CartMenu/>
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md  text-gray-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
@@ -107,8 +107,8 @@ const DarkNavbar = () => {
                   </div>
                   <div className="text-xs md:text-md lg:ml-4  hidden md:block">
                     <div className="flex items-center">
-                        <div className="md:mr-2 lg:ml-6">
-                          <div className="flex">
+                        <div className="md:mr-2 lg:ml-6 lg:px-6">
+                          <div className="flex lg:space-x-4">
                             <a
                               href="#"
                               className="rounded-md bg-gray-900 px-3 py-2 text-sm font-bold text-red-500 hover:bg-gray-700 hover:text-white"
@@ -121,6 +121,7 @@ const DarkNavbar = () => {
                             >
                               Stats
                             </a>
+                            <CartMenu/>
                           </div>
                         </div>
                         
