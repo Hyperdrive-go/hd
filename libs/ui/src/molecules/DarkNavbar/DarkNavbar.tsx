@@ -3,6 +3,7 @@ import { MagnifyingGlassIcon, ShoppingCartIcon } from "@heroicons/react/20/solid
 
 import { Bars3Icon, BellIcon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import SearchCollections from "../SearchCollections/SearchCollections";
 import CartMenu from "../CartMenu/CartMenu";
 
 const logo = require('../../assets/images/logo.png');
@@ -80,35 +81,20 @@ const DarkNavbar = () => {
                     </div>
                   </div>
                   <div className="flex flex-1 justify-center px-2 lg:ml-6 hidden md:block">
-                    <div className="w-full max-w-lg sm:max-w-xs">
-                      <label htmlFor="search" className="sr-only">
-                        Search name, id
-                      </label>
-                      <div className="relative">
-                        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                          <MagnifyingGlassIcon
-                            className="h-5 w-5 text-white"
-                            aria-hidden="true"
-                          />
-                        </div>
-                        <input
-                          id="search"
-                          name="search"
-                          className="block w-full rounded-full border border-white bg-transparent
-                          py-2 pl-10 pr-3 leading-5 text-gray-300 placeholder-gray-400 focus:border-white 
-                          sm:text-sm"
-                          placeholder="Search name, id ..."
-                          type="search"
-                        />
-                      </div>
-                    </div>
+                    <SearchCollections
+                    isMobile={false}
+                    />
                   </div>
                   <div className="md:hidden ml-auto flex gap-x-3">
                     {/* Mobile menu button */}
-                    <MagnifyingGlassIcon
-                        className="h-6 w-6 text-gray-300 mt-1 md:mt-0"
+                    <SearchCollections
+                      isMobile={true}
+                    />
+                    <ShoppingCartIcon
+                        className="h-6 w-6 text-gray-300"
                         aria-hidden="true"
                       />
+                    
                     <CartMenu/>
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md  text-gray-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
