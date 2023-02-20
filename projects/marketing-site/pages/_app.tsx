@@ -8,7 +8,7 @@ import TagManager from 'react-gtm-module'
 import type { AppProps } from 'next/app'
 
 function App({ Component, pageProps }: AppProps) {
-  const gtmId = process.env.GA_MEASUREMENT_ID
+  const gtmId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
   useEffect(() => {
     if (gtmId) TagManager.initialize({ gtmId })
