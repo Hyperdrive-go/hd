@@ -5,7 +5,7 @@ import Image from "next/image";
 import bannerBackground from "@/images/hero_banner.png"
 
 import { faDiscord, faTwitter,  } from "@fortawesome/free-brands-svg-icons";
-import { faCopy, faEdit, faImages } from "@fortawesome/free-solid-svg-icons";
+import { faCopy, faImages } from "@fortawesome/free-solid-svg-icons";
 
 const detail = {
   name: "Omni Chad",
@@ -68,14 +68,9 @@ export const Description = () => {
               <p className="text-sm lg:text-md text-white font-light">{detail.description}</p>
             </div>
 
-            <div className="mx-auto col-start-1 col-end-12 md:col-start-6 md:col-end-12">
+            <div className="mx-auto col-start-1 col-end-12 md:col-start-6 md:col-end-12 right-0">
               <div className="text-sm lg:text-md bg-black p-2 px-4 mt-4 rounded-lg text-white font-light flex">
                 {detail.address} <FontAwesomeIcon icon={faCopy} className="ml-2 text-white w-5 h-5" />
-              </div>
-              <div className="flex flex-row-reverse">
-                  <a href="settings" className="right-0 bg-black p-2 px-4 mt-4 rounded-lg text-sm lg:text-md text-white font-light flex">
-                    Edit page <FontAwesomeIcon icon={faEdit} className="ml-2 text-white w-5 h-5" />
-                  </a>
               </div>
             </div>
           </div>
