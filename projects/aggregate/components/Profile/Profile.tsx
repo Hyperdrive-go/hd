@@ -1,8 +1,29 @@
+import { useEffect, useState } from "react";
+
 import { Description } from "./Description/Description"
 import { Filter } from "./Filter/Filter"
 import { Listings } from "./Listings/Listings"
+import { fetchProfile } from "@libs/api/src/profile";
 
 export const Profile = () => {
+  // const address = useSelector((state: State) => state.address);
+  const address = "0x1557EE78Ab23F7264366a055eCAce48390b5B0C7";
+  const [profile, setProfile] = useState(null);
+
+  useEffect(() => {
+    async function getProfile() {
+      const profileRes = await fetchProfile(address);
+
+      setProfile(profileRes);
+    }
+
+    if (address) {
+      setProfile(null);
+      getProfile();
+    }
+  }, [address]);
+  console.log(profile)
+
     return (
       <>
         <Description/>
