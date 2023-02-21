@@ -421,6 +421,12 @@
       "tags": ["frontend-team"]
     },
     {
+      "packageName": "@libs/api",
+      "projectFolder": "libs/api",
+      "reviewCategory": "production",
+      "tags": ["frontend-team"]
+    },
+    {
       "packageName": "@libs/ui",
       "projectFolder": "libs/ui",
       "reviewCategory": "production",
