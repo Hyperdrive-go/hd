@@ -107,7 +107,7 @@ export const Hero = () => {
         </div>
         <h1 className="text-white p-6 lg:p-8 text-center text-2xl md:text-3xl lg:text-4xl font-bold">
           Explore, collect, and sell NFTs
-        </h1>          
+        </h1>    
         <div className="mx-auto max-w-sm md:max-w-2xl lg:max-w-7xl">
           <Carousel
             swipeable={true}
