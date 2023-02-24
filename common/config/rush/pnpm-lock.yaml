@@ -141,7 +141,6 @@ importers:
       '@fortawesome/free-brands-svg-icons': ^6.2.1
       '@fortawesome/free-solid-svg-icons': ^6.2.1
       '@fortawesome/react-fontawesome': ^0.2.0
-      '@libs/api': workspace:*
       '@libs/ui': workspace:*
       '@tailwindcss/aspect-ratio': ~0.4.2
       '@tailwindcss/forms': ~0.5.3
@@ -154,16 +153,12 @@ importers:
       eslint: 8.29.0
       eslint-config-next: 13.0.6
       next: 13.0.6
-      next-redux-wrapper: ^7.0.5
       next-themes: ^0.2.1
       next-transpile-modules: ^10.0.0
       postcss: ^8.4.19
       react: 18.2.0
       react-dom: 18.2.0
       react-multi-carousel: ^2.8.2
-      react-redux: ^7.2.6
-      redux: 4.0.0
-      redux-devtools-extension: ^2.13.9
       tailwindcss: ~3.2.4
       typescript: 4.9.4
     dependencies:
@@ -171,7 +166,6 @@ importers:
       '@fortawesome/free-brands-svg-icons': 6.3.0
       '@fortawesome/free-solid-svg-icons': 6.3.0
       '@fortawesome/react-fontawesome': 0.2.0_1f6218a2572e08c21c3560c31c54c999
-      '@libs/api': link:../../libs/api
       '@libs/ui': link:../../libs/ui
       '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.7
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
@@ -183,15 +177,11 @@ importers:
       eslint: 8.29.0
       eslint-config-next: 13.0.6_eslint@8.29.0+typescript@4.9.4
       next: 13.0.6_react-dom@18.2.0+react@18.2.0
-      next-redux-wrapper: 7.0.5_244b3bae8ce7b0ee442a0b2a4dba6b17
       next-themes: 0.2.1_f26ff3bd08f1cd28b0f73422c76f5ffd
       next-transpile-modules: 10.0.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-multi-carousel: 2.8.2
-      react-redux: 7.2.9_react-dom@18.2.0+react@18.2.0
-      redux: 4.0.0
-      redux-devtools-extension: 2.13.9_redux@4.0.0
       tailwindcss: 3.2.7
       typescript: 4.9.4
     devDependencies:
@@ -4311,15 +4301,6 @@ packages:
   /@types/react-gtm-module/2.0.1:
     resolution: {integrity: sha512-T/DN9gAbCYk5wJ1nxf4pSwmXz4d1iVjM++OoG+mwMfz9STMAotGjSb65gJHOS5bPvl6vLSsJnuC+y/43OQrltg==}
     dev: true
-
-  /@types/react-redux/7.1.25:
-    resolution: {integrity: sha512-bAGh4e+w5D8dajd6InASVIyCo4pZLJ66oLb80F9OBLO1gKESbZcRCJpTT6uLXX+HAB57zw1WTdwJdAsewuTweg==}
-    dependencies:
-      '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.0.28
-      hoist-non-react-statics: 3.3.2
-      redux: 4.0.0
-    dev: false
 
   /@types/react/18.0.25:
     resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
@@ -11124,18 +11105,6 @@ packages:
       react-i18next: 12.1.5_de1cf920cbe1f840e9b08c0b2c7bb4b2
     dev: false
 
-  /next-redux-wrapper/7.0.5_244b3bae8ce7b0ee442a0b2a4dba6b17:
-    resolution: {integrity: sha512-UFXdAWG5i+GFT8+Hoqpx3GArkPh34fVWF9YoA2VSHlBzsrPtnRd7NWM6FNSYUennpommTpWJ09mu+r/1UxyIkg==}
-    peerDependencies:
-      next: '>=10.0.3'
-      react: '*'
-      react-redux: '*'
-    dependencies:
-      next: 13.0.6_react-dom@18.2.0+react@18.2.0
-      react: 18.2.0
-      react-redux: 7.2.9_react-dom@18.2.0+react@18.2.0
-    dev: false
-
   /next-themes/0.2.1_f26ff3bd08f1cd28b0f73422c76f5ffd:
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
     peerDependencies:
@@ -12914,28 +12883,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /react-redux/7.2.9_react-dom@18.2.0+react@18.2.0:
-    resolution: {integrity: sha512-Gx4L3uM182jEEayZfRbI/G11ZpYdNAnBs70lFVMNdHJI76XYtR+7m0MN+eAs7UHBPhWXcnFPaS+9owSCJQHNpQ==}
-    peerDependencies:
-      react: ^16.8.3 || ^17 || ^18
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@types/react-redux': 7.1.25
-      hoist-non-react-statics: 3.3.2
-      loose-envify: 1.4.0
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-is: 17.0.2
-    dev: false
-
   /react-refresh/0.11.0:
     resolution: {integrity: sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==}
     engines: {node: '>=0.10.0'}
@@ -13179,22 +13126,6 @@ packages:
       indent-string: 4.0.0
       strip-indent: 3.0.0
     dev: true
-
-  /redux-devtools-extension/2.13.9_redux@4.0.0:
-    resolution: {integrity: sha512-cNJ8Q/EtjhQaZ71c8I9+BPySIBVEKssbPpskBfsXqb8HJ002A3KRVHfeRzwRo6mGPqsm7XuHTqNSNeS1Khig0A==}
-    deprecated: Package moved to @redux-devtools/extension.
-    peerDependencies:
-      redux: ^3.1.0 || ^4.0.0
-    dependencies:
-      redux: 4.0.0
-    dev: false
-
-  /redux/4.0.0:
-    resolution: {integrity: sha512-NnnHF0h0WVE/hXyrB6OlX67LYRuaf/rJcbWvnHHEPCF/Xa/AZpwhs/20WyqzQae5x4SD2F9nPObgBh2rxAgLiA==}
-    dependencies:
-      loose-envify: 1.4.0
-      symbol-observable: 1.2.0
-    dev: false
 
   /regenerate-unicode-properties/10.1.0:
     resolution: {integrity: sha512-d1VudCLoIGitcU/hEg2QqvyGZQmdC0Lf8BqdOMXGFSvJP4bNV1+XqbPQeHHLD51Jh4QJJ225dlIFvY4Ly6MXmQ==}
@@ -14089,11 +14020,6 @@ packages:
       csso: 4.2.0
       picocolors: 1.0.0
       stable: 0.1.8
-    dev: false
-
-  /symbol-observable/1.2.0:
-    resolution: {integrity: sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==}
-    engines: {node: '>=0.10.0'}
     dev: false
 
   /symbol-tree/3.2.4:

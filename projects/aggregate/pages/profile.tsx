@@ -1,9 +1,11 @@
 import Head from "next/head";
-import { Profile } from "@/components/Profile/Profile";
+import { useEffect, useState } from "react";
 
+import { Profile } from "@/components/Profile/Profile";
 import Molecules from "@libs/ui/src/molecules";
 
 export default function HomePage() {
+
   return (
     <>
       <Head>
@@ -14,6 +16,16 @@ export default function HomePage() {
       </Head>
       <Molecules.DarkNavbar />
         <Profile/>
+        {/* {!!profile ? (
+          <>
+            <Profile/>
+          </>
+        ) : address ? (
+          <Molecules.Loader />
+        ) : (
+          <Molecules.NotLoggedIn />
+        )} */}
+
       <Molecules.Footer />
     </>
   );
