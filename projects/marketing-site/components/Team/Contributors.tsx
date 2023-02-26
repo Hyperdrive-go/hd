@@ -1,5 +1,6 @@
 import daru_vo from '@/images/daru_vo.jpg';
 import deren from '@/images/deren-avatar.png';
+import THREEt from '@/images/3t.png';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next'
 
@@ -13,6 +14,11 @@ const people = [
     name: 'Deren Somsanith',
     role: 'Software Engineer',
     imageUrl: deren,
+  },
+  {
+    name: '3t',
+    role: 'Software Engineer',
+    imageUrl: THREEt,
   },
 ];
 
