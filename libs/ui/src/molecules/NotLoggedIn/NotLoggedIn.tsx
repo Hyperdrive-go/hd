@@ -1,24 +1,25 @@
 import '@rainbow-me/rainbowkit/styles.css';
 
 import {
-    ConnectButton,
-    getDefaultWallets,
-    RainbowKitProvider,
-    darkTheme
-  } from '@rainbow-me/rainbowkit';
+  ConnectButton,
+  getDefaultWallets,
+  RainbowKitProvider,
+  darkTheme
+} from '@rainbow-me/rainbowkit';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { optimism } from 'wagmi/chains';
+import { optimism, optimismGoerli } from 'wagmi/chains';
+import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public';
-  
-  const { chains, provider } = configureChains(
-    [optimism],
-    [
-      publicProvider()
-    ]
+
+const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID || ''
+
+const { chains, provider } = configureChains(
+    [optimism, optimismGoerli],
+    [alchemyProvider({ apiKey: alchemyId }), publicProvider()]
   );
   
   const { connectors } = getDefaultWallets({
-    appName: 'My RainbowKit App',
+    appName: 'Hyperdrive NFT marketplace',
     chains
   });
   
@@ -27,6 +28,7 @@ import { publicProvider } from 'wagmi/providers/public';
     connectors,
     provider
   })
+
 const NotLoggedIn = () => {
 
     return (

@@ -3,7 +3,6 @@ import Image from "next/image";
 
 
 import bannerBackground from "@/images/hero_banner.png"
-
 import { faDiscord, faTwitter,  } from "@fortawesome/free-brands-svg-icons";
 import { faCopy, faEdit, faImages } from "@fortawesome/free-solid-svg-icons";
 

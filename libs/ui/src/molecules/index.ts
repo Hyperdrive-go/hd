@@ -1,10 +1,10 @@
-import DarkNavbar from "./DarkNavbar/DarkNavbar";
+import Navbar from "./Navbar/Navbar"
 import Footer from "./Footer/Footer";
 import NotLoggedIn from "./NotLoggedIn/NotLoggedIn";
 import Loader from "./Loader/Loader";
 
 export default {
-  DarkNavbar,
+  Navbar,
   Footer,
   NotLoggedIn,
   Loader

@@ -1,7 +1,7 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MagnifyingGlassIcon, ShoppingCartIcon } from "@heroicons/react/20/solid";
+import { ShoppingCartIcon } from "@heroicons/react/20/solid";
 
-import { Bars3Icon, BellIcon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, WalletIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import SearchCollections from "../SearchCollections/SearchCollections";
 import CartMenu from "../CartMenu/CartMenu";
@@ -15,22 +15,23 @@ import {
   RainbowKitProvider,
   darkTheme
 } from '@rainbow-me/rainbowkit';
+import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { optimism } from 'wagmi/chains';
+import { optimism, optimismGoerli } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 const labelWallet:any = <div className="flex"><WalletIcon className="block h-4 w-4 md:h-5 md:w-5 mr-1" aria-hidden="true" />
                           <span className="md:mt-1">Connect Wallet</span> </div>;
 
+const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID || ''
+
 const { chains, provider } = configureChains(
-  [optimism],
-  [
-    publicProvider()
-  ]
+  [optimism, optimismGoerli],
+  [alchemyProvider({ apiKey: alchemyId }), publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'My RainbowKit App',
+  appName: 'Hyperdrive NFT marketplace',
   chains
 });
 
@@ -55,7 +56,7 @@ const links = [
   },
 ];
 
-const DarkNavbar = () => {
+const Navbar = () => {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains} theme={darkTheme(
@@ -73,11 +74,13 @@ const DarkNavbar = () => {
                 <div className="relative flex h-20 items-center justify-between">
                   <div className="flex items-center px-2 lg:px-0">
                     <div className="flex-shrink-0">
-                      <Image
-                        className="h-6 md:h-8 w-auto"
-                        src={logo}
-                        alt="Your Company"
-                      />
+                      <a href="/">
+                        <Image
+                          className="h-6 md:h-8 w-auto"
+                          src={logo}
+                          alt="Your Company"
+                        />
+                      </a>
                     </div>
                   </div>
                   <div className="flex flex-1 justify-center px-2 lg:ml-6 hidden md:block">
@@ -145,4 +148,4 @@ const DarkNavbar = () => {
   );
 };
 
-export default DarkNavbar;
+export default Navbar;
