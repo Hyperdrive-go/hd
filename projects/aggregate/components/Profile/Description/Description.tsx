@@ -4,11 +4,8 @@ import Image from "next/image";
 import bannerBackground from "@/images/hero_banner.png"
 import { faDiscord, faTwitter,  } from "@fortawesome/free-brands-svg-icons";
 import { faCopy, faEdit, faImages } from "@fortawesome/free-solid-svg-icons";
-import {
-  useAccount,
-  useEnsName,
-} from 'wagmi'
-import { truncateAddress } from '@libs/ui/src/common/truncateText'
+
+import { truncateAddress } from '@libs/ui/src/lib/truncateText'
 
 const detail = {
   name: "Omni Chad",
@@ -16,12 +13,8 @@ const detail = {
   address: "0xdAb8AB47...757a02ecA3"
 }
 
-export const Description = () => {
-    const account = useAccount()
-    const formattedAddress = truncateAddress(account.address)
-
-    const { data: ensName } = useEnsName({ address: account?.address })
-    console.log(ensName)
+export const Description = ({ profile }) => {
+    const formattedAddress = truncateAddress(profile.address)
     return (
       <div className="">
         <div className="mx-auto">
@@ -54,7 +47,7 @@ export const Description = () => {
             <div className="col-start-2 col-end-12 md:hidden">
               <div className="flex">
                 <div className="flex-auto">
-                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{ensName || formattedAddress}</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{profile.reverse_ens || formattedAddress}</h2>
                 </div>
               </div>
               <FontAwesomeIcon icon={faTwitter} className="ml-4 text-white w-5 h-5 inline mt-2" />
@@ -68,7 +61,7 @@ export const Description = () => {
             <div className="col-start-2 col-end-6 lg:mt-2 hidden md:block">
               <div className="flex py-2">
                 <div className="flex-auto">
-                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{ensName || formattedAddress}</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{profile.reverse_ens || formattedAddress}</h2>
                 </div>
                 <FontAwesomeIcon icon={faTwitter} className="mr-2 text-white w-5 h-5 inline mt-2" />
                 <FontAwesomeIcon icon={faDiscord} className="mr-4 text-white w-5 h-5 inline mt-2" />

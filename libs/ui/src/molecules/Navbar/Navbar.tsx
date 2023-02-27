@@ -111,7 +111,7 @@ const Navbar = () => {
                   </div>
                   <div className="text-xs md:text-md lg:ml-4  hidden md:block">
                     <div className="flex items-center">
-                        <div className="md:mr-2 lg:ml-6 lg:px-6">
+                        <div className="lg:ml-6 lg:px-6">
                           <div className="flex lg:space-x-4">
                             <a
                               href="#"
@@ -128,15 +128,6 @@ const Navbar = () => {
                             <CartMenu/>
                           </div>
                         </div>
-                        
-                      {/* <ConnectButton
-                        label={labelWallet}
-                        showBalance={false}
-                        accountStatus={{
-                          smallScreen: 'avatar', 
-                          largeScreen: 'full'
-                        }}
-                      /> */}
                       <ConnectWallet/>
                     </div>
                   </div>
