@@ -19,6 +19,7 @@ import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { optimism, optimismGoerli } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import ConnectWallet from "../../components/ConnectWallet";
 
 const labelWallet:any = <div className="flex"><WalletIcon className="block h-4 w-4 md:h-5 md:w-5 mr-1" aria-hidden="true" />
                           <span className="md:mt-1">Connect Wallet</span> </div>;
@@ -128,14 +129,15 @@ const Navbar = () => {
                           </div>
                         </div>
                         
-                      <ConnectButton
+                      {/* <ConnectButton
                         label={labelWallet}
                         showBalance={false}
                         accountStatus={{
                           smallScreen: 'avatar', 
                           largeScreen: 'full'
                         }}
-                      />
+                      /> */}
+                      <ConnectWallet/>
                     </div>
                   </div>
                 </div>

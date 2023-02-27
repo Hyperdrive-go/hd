@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
-
 import bannerBackground from "@/images/hero_banner.png"
 import { faDiscord, faTwitter,  } from "@fortawesome/free-brands-svg-icons";
 import { faCopy, faEdit, faImages } from "@fortawesome/free-solid-svg-icons";
+import {
+  useAccount,
+  useEnsName,
+} from 'wagmi'
+import { truncateAddress } from '@libs/ui/src/common/truncateText'
 
 const detail = {
   name: "Omni Chad",
@@ -13,6 +17,11 @@ const detail = {
 }
 
 export const Description = () => {
+    const account = useAccount()
+    const formattedAddress = truncateAddress(account.address)
+
+    const { data: ensName } = useEnsName({ address: account?.address })
+    console.log(ensName)
     return (
       <div className="">
         <div className="mx-auto">
@@ -45,7 +54,7 @@ export const Description = () => {
             <div className="col-start-2 col-end-12 md:hidden">
               <div className="flex">
                 <div className="flex-auto">
-                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{detail.name}</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{ensName || formattedAddress}</h2>
                 </div>
               </div>
               <FontAwesomeIcon icon={faTwitter} className="ml-4 text-white w-5 h-5 inline mt-2" />
@@ -59,7 +68,7 @@ export const Description = () => {
             <div className="col-start-2 col-end-6 lg:mt-2 hidden md:block">
               <div className="flex py-2">
                 <div className="flex-auto">
-                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{detail.name}</h2>
+                  <h2 className="text-white text-xl lg:text-2xl font-bold inline">{ensName || formattedAddress}</h2>
                 </div>
                 <FontAwesomeIcon icon={faTwitter} className="mr-2 text-white w-5 h-5 inline mt-2" />
                 <FontAwesomeIcon icon={faDiscord} className="mr-4 text-white w-5 h-5 inline mt-2" />
@@ -69,7 +78,7 @@ export const Description = () => {
 
             <div className="mx-auto col-start-1 col-end-12 md:col-start-6 md:col-end-12">
               <div className="text-sm lg:text-md bg-black p-2 px-4 mt-4 rounded-lg text-white font-light flex">
-                {detail.address} <FontAwesomeIcon icon={faCopy} className="ml-2 text-white w-5 h-5" />
+                {formattedAddress} <FontAwesomeIcon icon={faCopy} className="ml-2 text-white w-5 h-5" />
               </div>
               <div className="flex flex-row-reverse">
                   <a href="settings" className="right-0 bg-black p-2 px-4 mt-4 rounded-lg text-sm lg:text-md text-white font-light flex">
