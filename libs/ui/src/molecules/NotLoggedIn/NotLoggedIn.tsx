@@ -11,11 +11,9 @@ import { optimism, optimismGoerli } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public';
 
-const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID || ''
-
 const { chains, provider } = configureChains(
     [optimism, optimismGoerli],
-    [alchemyProvider({ apiKey: alchemyId }), publicProvider()]
+    [publicProvider()]
   );
   
   const { connectors } = getDefaultWallets({

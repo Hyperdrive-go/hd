@@ -24,11 +24,10 @@ import ConnectWallet from "../../components/ConnectWallet";
 const labelWallet:any = <div className="flex"><WalletIcon className="block h-4 w-4 md:h-5 md:w-5 mr-1" aria-hidden="true" />
                           <span className="md:mt-1">Connect Wallet</span> </div>;
 
-const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID || ''
 
 const { chains, provider } = configureChains(
   [optimism, optimismGoerli],
-  [alchemyProvider({ apiKey: alchemyId }), publicProvider()]
+  [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
@@ -79,7 +78,7 @@ const Navbar = () => {
                         <Image
                           className="h-6 md:h-8 w-auto"
                           src={logo}
-                          alt="Your Company"
+                          alt="Hyperdrive"
                         />
                       </a>
                     </div>

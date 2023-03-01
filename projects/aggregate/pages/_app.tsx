@@ -15,11 +15,9 @@ import { publicProvider } from 'wagmi/providers/public';
 import '../styles/globals.css'
 import '@rainbow-me/rainbowkit/styles.css';
 
-const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID || ''
-
 const { chains, provider } = configureChains(
   [optimism, optimismGoerli],
-  [alchemyProvider({ apiKey: alchemyId }), publicProvider()]
+  [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
