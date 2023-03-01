@@ -31,7 +31,7 @@ const Footer = () => {
               <Image
                 className="hidden h-8 w-auto lg:block"
                 src={logo}
-                alt="Your Company"
+                alt="Hyperdrive"
               />
               <div className="md:pt-2">
                 <div className="rounded-md text-sm font-medium text-white">

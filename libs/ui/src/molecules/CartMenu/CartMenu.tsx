@@ -43,7 +43,7 @@ const CartMenu: FC = () => {
           <FaShoppingCart className="h-[18px] w-[18px] text-white" />
         </div>
       </Popover.Trigger>
-      <Popover.Content sideOffset={22}
+      <Popover.Content align="end" sideOffset={22}
         className="PopoverContent z-[10000000] w-[367px] rounded-xl md:rounded-2xl bg-gray-800 shadow-lg dark:border dark:border-neutral-700 dark:bg-neutral-900"
         >
         <div className="mb-4 divide-y divide-gray-700">
