@@ -1,58 +1,58 @@
-import type { AppContext, AppProps } from 'next/app'
-import { default as NextApp } from 'next/app'
-import { FC } from 'react'
+import '../styles/globals.css'
+import '@rainbow-me/rainbowkit/styles.css'
 
-import { WagmiConfig, createClient, configureChains } from 'wagmi'
 import {
+  darkTheme,
   getDefaultWallets,
   RainbowKitProvider,
-  darkTheme
-} from '@rainbow-me/rainbowkit';
-import { optimism, optimismGoerli } from 'wagmi/chains';
-import { alchemyProvider } from 'wagmi/providers/alchemy'
-import { publicProvider } from 'wagmi/providers/public';
+} from '@rainbow-me/rainbowkit'
+import NextApp from 'next/app'
+import { FC, useEffect } from 'react'
+import TagManager from 'react-gtm-module'
+import { configureChains, createClient, WagmiConfig } from 'wagmi'
+import { optimism, optimismGoerli } from 'wagmi/chains'
+import { publicProvider } from 'wagmi/providers/public'
 
-import '../styles/globals.css'
-import '@rainbow-me/rainbowkit/styles.css';
-
+import type { AppContext, AppProps } from 'next/app'
 const { chains, provider } = configureChains(
   [optimism, optimismGoerli],
-  [publicProvider()]
-);
+  [publicProvider()],
+)
 
 const { connectors } = getDefaultWallets({
   appName: 'Hyperdrive NFT marketplace',
-  chains
-});
+  chains,
+})
 
 const wagmiClient = createClient({
   autoConnect: true,
   connectors,
-  provider
+  provider,
 })
 
-
-
 function AppWrapper(props: AppProps) {
-  return (
-      <App {...props} />
-  )
+  return <App {...props} />
 }
 
-const App: FC<AppProps> = ({
-    Component,
-    pageProps
-  }) => {
+const App: FC<AppProps> = ({ Component, pageProps }) => {
+  const gtmId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+
+  useEffect(() => {
+    if (gtmId) TagManager.initialize({ gtmId })
+  }, [gtmId])
+
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains} theme={darkTheme(
-        {
+      <RainbowKitProvider
+        chains={chains}
+        theme={darkTheme({
           accentColor: '#DB3732',
           accentColorForeground: 'white',
           borderRadius: 'large',
-          fontStack: 'system'
-        }
-      )} showRecentTransactions={true}>
+          fontStack: 'system',
+        })}
+        showRecentTransactions={true}
+      >
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>

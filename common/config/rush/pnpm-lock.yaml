@@ -152,6 +152,7 @@ importers:
       '@types/node': 18.11.12
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
+      '@types/react-gtm-module': ~2.0.1
       autoprefixer: ^10.4.13
       clsx: ^1.2.1
       eslint: 8.29.0
@@ -162,6 +163,7 @@ importers:
       postcss: ^8.4.19
       react: 18.2.0
       react-dom: 18.2.0
+      react-gtm-module: ~2.0.11
       react-multi-carousel: ^2.8.2
       swr: ^2.0.3
       tailwindcss: ~3.2.4
@@ -189,12 +191,14 @@ importers:
       next-themes: 0.2.1_f26ff3bd08f1cd28b0f73422c76f5ffd
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      react-gtm-module: 2.0.11
       react-multi-carousel: 2.8.2
       swr: 2.0.4_react@18.2.0
       tailwindcss: 3.2.7
       typescript: 4.9.4
       wagmi: 0.10.15_2b22cd9625bba76ea201f5061fc9886e
     devDependencies:
+      '@types/react-gtm-module': 2.0.1
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
 
