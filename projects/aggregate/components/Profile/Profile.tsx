@@ -1,8 +1,64 @@
 import { Description } from "./Description/Description"
 import { Filter } from "./Filter/Filter"
 import { Listings } from "./Listings/Listings"
+import { useEffect, useState } from "react";
+import { ERC721Tokens } from "../ERC721Tokens";
+
+import {
+  fetchProfileCollections,
+  fetchProfileFilteredActivity,
+  fetchProfileFilteredTokens,
+} from "@libs/api/src/profile";
+import { fetchMoreByURL } from "@libs/api/src/general";
 
 export const Profile = ({ profile }) => {
+  const [tokensState, setTokensState] = useState({
+    tokens: null,
+    moreTokens: false,
+    tokenResults: [],
+    tokensUpdating: true,
+  });
+
+  async function fetchMoreTokens() {
+    if (tokensState.tokens && tokensState.tokens.next) {
+      const moreTokens = await fetchMoreByURL(tokensState.tokens.next);
+
+      setTokensState({
+        ...tokensState,
+        tokens: moreTokens,
+        moreTokens: moreTokens.next ? true : false,
+        tokenResults: tokensState.tokenResults.concat(moreTokens.results),
+      });
+    }
+  }
+
+  const [filters, setFilters] = useState({
+    tokenSort: "price:desc",
+    activitySort: "timestamp:desc",
+    availability: "all",
+    eventTypes: [],
+    minPrice: "",
+    maxPrice: "",
+    paymentToken: "all",
+    collections: [],
+    chains: [],
+    searchQuery: "",
+  });
+
+  const [collectionFilters, setCollectionFilters] = useState({
+    collections: null,
+    moreCollections: false,
+    collectionResults: [],
+  });
+
+  useEffect(() => {
+    const fetchCollections = async () => {
+      const collections = await fetchProfileCollections(profile.address);
+    };
+
+    fetchCollections();
+  }, [profile]);
+  
     return (
       <>
          <Description profile={profile}/>
@@ -12,7 +68,16 @@ export const Profile = ({ profile }) => {
                  <Filter/>
                </div>
                <div className="md:col-start-2 md:col-end-5">
-                 <Listings/>
+                 {/* <Listings/> */}
+                 <ERC721Tokens
+                  tokensState={tokensState}
+                  setTokensState={setTokensState}
+                  fetchMoreTokens={fetchMoreTokens}
+                  profileAddress={profile.address}
+                  filters={filters}
+                  setFilters={setFilters}
+                  collectionFilters={collectionFilters}
+                />
                </div>
            </div>
          </div>
