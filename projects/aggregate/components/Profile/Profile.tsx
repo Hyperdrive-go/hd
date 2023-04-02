@@ -54,8 +54,16 @@ export const Profile = ({ profile }) => {
   useEffect(() => {
     const fetchCollections = async () => {
       const collections = await fetchProfileCollections(profile.address);
-    };
 
+      setCollectionFilters({
+        ...collectionFilters,
+        collections: collections,
+        moreCollections: collections.next ? true : false,
+        collectionResults: collections.results,
+      });
+  
+    };
+  
     fetchCollections();
   }, [profile]);
   

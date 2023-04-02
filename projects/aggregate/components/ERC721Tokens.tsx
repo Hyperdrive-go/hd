@@ -1,4 +1,7 @@
 import Image from "next/image";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { AssetCardGhost } from "./AssetCard/AssetCardGhost";
+import { CardGrid } from "./AssetCard/styles";
 import { featureToken, hideToken } from "@libs/api/src/profile";
 
 export const ERC721Tokens = ({
@@ -10,7 +13,6 @@ export const ERC721Tokens = ({
   collectionFilters,
   profileAddress,
 }) => {
-  console.log(tokensState)
   const hide = async (e, token) => {
     e.preventDefault();
     e.stopPropagation();
@@ -53,17 +55,45 @@ export const ERC721Tokens = ({
 
   return (
     <>
-      {collectionFilters.collectionResults.length > 0 &&
-            filters.collections.map((collectionId, index) => {
-              const collection = collectionFilters.collectionResults.find(
-                (e) => e.address == collectionId
-              );
-              console.log(collection)
-              if (collection)
-                return (
-                  <></>
-                );
-            })}
+    {!!tokensState.tokensUpdating ? (
+        <CardGrid className="large">
+          {[...Array(18)].map((e, i) => (
+            <AssetCardGhost key={i} />
+          ))}
+        </CardGrid>
+      ) : (
+        <>
+          {!!tokensState.tokenResults && tokensState.tokenResults.length > 0 ? (
+            console.log(1)
+            // <CardGrid className={"large"}>
+            //   <InfiniteScroll
+            //     dataLength={tokensState.tokenResults.length}
+            //     next={fetchMoreTokens}
+            //     hasMore={tokensState.moreTokens}
+            //     loader={[...Array(6)].map((e, i) => (
+            //       <AssetCardGhost key={i} />
+            //     ))}
+            //     style={{ display: "contents", overflow: "visible" }}
+            //   >
+            //     {tokensState.tokenResults.map((token, index) => (
+            //       // <AssetCard
+            //       //   token={token}
+            //       //   profile={profileAddress}
+            //       //   hideToken={hide}
+            //       //   key={index}
+            //       // />
+            //       // <div>{index}</div>
+            //     ))}
+            //   </InfiniteScroll>
+            // </CardGrid>
+          ) : (
+            <div>
+              <h1>No items to display</h1>
+              <p>Try updating your selected filters</p>
+            </div>
+          )}
+        </>
+      )}
     </>
   );
 };
