@@ -9,8 +9,7 @@ export default function CollectionPage() {
         <title>Collection</title>
       </Head>
       <Molecules.Navbar />
-        {/* <Collection/> */}
-        <Molecules.NotFound />
+        <Collection/>
       <Molecules.Footer />
     </>
   );

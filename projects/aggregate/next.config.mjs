@@ -7,6 +7,14 @@ const nextConfig = {
   experimental: {
     transpilePackages: ['@libs/ui'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
 }
 
 export default nextConfig

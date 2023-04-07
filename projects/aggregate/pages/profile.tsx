@@ -1,6 +1,5 @@
 import Head from "next/head";
 
-import { useEffect, useState } from "react";
 import { Profile } from "@/components/Profile/Profile";
 import Molecules from "@libs/ui/src/molecules";
 import {
