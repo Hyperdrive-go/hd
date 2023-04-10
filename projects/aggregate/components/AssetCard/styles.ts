@@ -1,4 +1,5 @@
-import styled, { keyframes } from "styled-components";
+import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react'
 
 export const CardGrid = styled.div`
   display: grid;
@@ -181,13 +182,17 @@ const GhostKeyframes = keyframes`
   100% { background-position: 0% 50% }
 `;
 
-interface TokenImageContainerProps {
-  backgroundColor: string;
+type TokenImageContainerProps = {
+  backgroundColor?: string;
 }
 
 export const TokenImageContainer = styled.div<TokenImageContainerProps>`
   position: relative;
   background: #1C1C1D;
+  background: ${(props) =>
+    props.backgroundColor
+      ? props.backgroundColor
+      : "#1C1C1D"};
   aspect-ratio: 1;
   border-radius: 12px 12px 0 0;
   overflow: hidden;
